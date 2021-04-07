@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9F9FC"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:paddingTop="0.1dp"
+    tools:context=".AudioBook">
+
+    <LinearLayout
+        android:id="@+id/barre"
+        android:layout_width="414dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="661dp"
+        android:Color="#A1E5EC"
+        android:background="#4ED9DE"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                app:background="@drawable/ic_baseline_home_24"
+                app:backgroundTint="#4ED9DE"
+                app:icon="@drawable/ic_baseline_home_24"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="55dp"
+                app:iconTint="#070707"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/homeText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/accueil"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/research"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/search"
+                android:clickable="true"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#090909"
+                app:icon="@drawable/search"
+                app:iconGravity="textEnd|start"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTint="#020202"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/search"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/discoverLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/discover"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#4ED9DE"
+                app:icon="@drawable/icon_eyeglasse"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="55dp"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/discoverText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/discover"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/historyLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/history"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#4ED9DE"
+                app:icon="@drawable/icon_clock"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTintMode="multiply" />
+            <TextView
+                android:id="@+id/historyText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/history"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plusLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#4ED9DE"
+                app:icon="@drawable/icon_plus"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTintMode="multiply" />
+            <TextView
+                android:id="@+id/plusText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/plus"
+                android:textSize="12sp" />
+            </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AudioBook extends AppCompatActivity {
+public class BookSuggestion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_audiobook);
+        setContentView(R.layout.activity_book_suggestion);
     }
 }

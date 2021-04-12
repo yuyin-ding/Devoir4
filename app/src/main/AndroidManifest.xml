@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Devoir4_2905">
+        <activity android:name=".BookSuggestion"></activity>
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".MoodActivity" />
-        <activity android:name=".login.Create_AccountActivity"/>
-        <activity android:name=".login.Reading_preferencesActivity"/>
-        <activity android:name=".login.Reading_TimeActivity"/>
-        <activity android:name=".login.MainActivity"
+        <activity android:name=".login.Create_AccountActivity" />
+        <activity android:name=".login.Reading_preferencesActivity" />
+        <activity android:name=".login.Reading_TimeActivity" />
+        <activity
+            android:name=".login.MainActivity"
             android:label="BooksForU">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

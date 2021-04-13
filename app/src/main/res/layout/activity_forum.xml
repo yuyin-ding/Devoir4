@@ -21,8 +21,8 @@
 
         <Button
             android:id="@+id/profil"
-            android:layout_width="44dp"
-            android:layout_height="wrap_content"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
@@ -37,7 +37,7 @@
             app:backgroundTint="#090909"
             app:iconGravity="textEnd"
             app:iconPadding="0dp"
-            app:iconSize="66dp"
+            app:iconSize="50dp"
             app:iconTintMode="multiply"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -150,13 +150,13 @@
 
             <LinearLayout
                 android:layout_width="414dp"
-                android:layout_height="86dp"
+                android:layout_height="126dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/profilN2"
-                    android:layout_width="66dp"
-                    android:layout_height="66dp"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
@@ -164,6 +164,7 @@
                     android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#D5ECEC"
                     android:clickable="true"
                     android:color=""
                     android:focusable="true"
@@ -171,7 +172,7 @@
                     app:icon="@drawable/user"
                     app:iconGravity="textEnd"
                     app:iconPadding="0dp"
-                    app:iconSize="66dp"
+                    app:iconSize="86dp"
                     app:iconTintMode="multiply"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -181,13 +182,13 @@
 
             <LinearLayout
                 android:layout_width="414dp"
-                android:layout_height="86dp"
+                android:layout_height="126dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/profilN3"
-                    android:layout_width="66dp"
-                    android:layout_height="66dp"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
@@ -195,6 +196,7 @@
                     android:layout_marginRight="25dp"
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#D5ECEC"
                     android:clickable="true"
                     android:color=""
                     android:focusable="true"
@@ -202,7 +204,7 @@
                     app:icon="@drawable/user"
                     app:iconGravity="textEnd"
                     app:iconPadding="0dp"
-                    app:iconSize="66dp"
+                    app:iconSize="86dp"
                     app:iconTintMode="multiply"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -213,13 +215,13 @@
 
             <LinearLayout
                 android:layout_width="414dp"
-                android:layout_height="83dp"
+                android:layout_height="123dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/profilN4"
-                    android:layout_width="66dp"
-                    android:layout_height="66dp"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
@@ -227,14 +229,14 @@
                     android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#D5ECEC"
                     android:clickable="true"
                     android:color=""
                     android:focusable="true"
-                    android:text=""
                     app:icon="@drawable/user"
                     app:iconGravity="textEnd"
                     app:iconPadding="0dp"
-                    app:iconSize="66dp"
+                    app:iconSize="86dp"
                     app:iconTintMode="multiply"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -247,13 +249,13 @@
 
             <LinearLayout
                 android:layout_width="414dp"
-                android:layout_height="88dp"
+                android:layout_height="128dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/profilN1"
-                    android:layout_width="66dp"
-                    android:layout_height="66dp"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
@@ -268,7 +270,7 @@
                     app:icon="@drawable/user"
                     app:iconGravity="textEnd"
                     app:iconPadding="0dp"
-                    app:iconSize="66dp"
+                    app:iconSize="86dp"
                     app:iconTintMode="multiply"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

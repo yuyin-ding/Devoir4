@@ -325,12 +325,15 @@
                 android:color="#00F6F5F5"
                 android:focusable="true"
                 android:text=""
+                android:textColor="#020202"
                 android:visibility="visible"
                 app:backgroundTint="#12CDD4"
+
                 app:icon="@drawable/icon_plus"
                 app:iconGravity="textEnd"
                 app:iconPadding="0dp"
                 app:iconSize="45dp"
+                app:iconTint="#090909"
                 app:iconTintMode="multiply" />
 
             <TextView

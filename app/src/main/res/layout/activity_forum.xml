@@ -129,6 +129,156 @@
             app:iconTintMode="multiply" />
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="417dp"
+        android:layout_height="504dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="152dp">
+
+        <LinearLayout
+            android:id="@+id/searchVerList"
+            android:layout_width="412dp"
+            android:layout_height="575dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profil">
+
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="86dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/profilN2"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="637dp"
+                    android:background="@drawable/roundedbutton"
+                    android:clickable="true"
+                    android:color=""
+                    android:focusable="true"
+                    android:text=""
+                    app:icon="@drawable/user"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="66dp"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="86dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/profilN3"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/roundedbutton"
+                    android:clickable="true"
+                    android:color=""
+                    android:focusable="true"
+                    android:text=""
+                    app:icon="@drawable/user"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="66dp"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="83dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/profilN4"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="637dp"
+                    android:background="@drawable/roundedbutton"
+                    android:clickable="true"
+                    android:color=""
+                    android:focusable="true"
+                    android:text=""
+                    app:icon="@drawable/user"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="66dp"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="88dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/profilN1"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="637dp"
+                    android:background="@drawable/roundedbutton"
+                    android:clickable="true"
+                    android:color=""
+                    android:focusable="true"
+                    android:text=""
+                    app:icon="@drawable/user"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="66dp"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
     <LinearLayout
         android:id="@+id/barre"
         android:layout_width="match_parent"
@@ -322,16 +472,17 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="0dp"
+                android:background="@drawable/icon_plus"
                 android:clickable="true"
-                android:color="#00F6F5F5"
                 android:focusable="true"
                 android:text=""
                 android:visibility="visible"
-                app:backgroundTint="#12CDD4"
+                app:backgroundTint="#090909"
                 app:icon="@drawable/icon_plus"
-                app:iconGravity="textEnd"
+                app:iconGravity="textEnd|start"
                 app:iconPadding="0dp"
                 app:iconSize="45dp"
+                app:iconTint="#020202"
                 app:iconTintMode="multiply" />
 
             <TextView

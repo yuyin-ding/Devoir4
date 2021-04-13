@@ -323,6 +323,7 @@
                 android:visibility="visible"
                 app:backgroundTint="#12CDD4"
                 app:icon="@drawable/icon_plus"
+                app:iconTint="@color/black"
                 app:iconGravity="textEnd"
                 app:iconPadding="0dp"
                 app:iconSize="45dp"

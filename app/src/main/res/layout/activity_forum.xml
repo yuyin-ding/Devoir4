@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookSuggestion"
+    tools:context=".Forum"
     android:background="#D5ECEC"
     android:orientation="vertical">
 
@@ -83,6 +83,7 @@
             android:textStyle="italic|bold" />
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="408dp"
         android:layout_height="77dp"
@@ -94,22 +95,22 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/bookSuggestion"
+            android:id="@+id/textForum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="55dp"
             android:layout_marginLeft="35dp"
             android:layout_marginEnd="6dp"
             android:layout_marginRight="6dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="cursive"
-            android:text="Book Suggestion"
+            android:text="Your forums"
             android:textSize="50sp"
             android:textStyle="italic|bold"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/iconBook"
+            android:id="@+id/iconForum"
             android:layout_width="44dp"
             android:layout_height="45dp"
             android:layout_marginStart="5dp"
@@ -121,7 +122,7 @@
             android:background=""
             android:clickable="true"
             app:backgroundTint="#090909"
-            app:icon="@drawable/icon_book"
+            app:icon="@drawable/bubble_chat"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:iconSize="46dp"
@@ -344,7 +345,5 @@
                 android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -48,7 +48,6 @@
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="224dp"
@@ -81,6 +80,8 @@
             android:text="@string/language"
             android:textSize="20sp"
             android:textStyle="italic|bold" />
+
+
     </LinearLayout>
 
 

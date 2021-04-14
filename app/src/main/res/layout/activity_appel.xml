@@ -300,14 +300,14 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/discoverLayout"
+            android:id="@+id/readingLayout"
             android:layout_width="82dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/discover"
+                android:id="@+id/reading"
                 android:layout_width="55dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="13dp"
@@ -329,13 +329,13 @@
                 app:iconTintMode="multiply" />
 
             <TextView
-                android:id="@+id/discoverText"
+                android:id="@+id/readingText"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
                 android:paddingTop="0dp"
-                android:text="@string/discover"
+                android:text="@string/reading"
                 android:textSize="12sp" />
         </LinearLayout>
 

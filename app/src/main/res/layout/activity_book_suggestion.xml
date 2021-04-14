@@ -243,7 +243,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/bookRec1"
                     android:layout_width="125dp"
                     android:layout_height="173dp"
                     android:layout_marginStart="32dp"
@@ -255,15 +255,15 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harryPotter"
+                    android:foreground="@drawable/harrypotter"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC"
-                    app:srcCompat="@drawable/harryPotter"
-                    tools:srcCompat="@drawable/harryPotter" />
+                    app:srcCompat="@drawable/harrypotter"
+                    tools:srcCompat="@drawable/harrypotter" />
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/bookRec2"
                     android:layout_width="125dp"
                     android:layout_height="173dp"
                     android:layout_marginStart="23dp"
@@ -275,12 +275,12 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harryPotter2"
+                    android:foreground="@drawable/harrypotter2"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC"
-                    app:srcCompat="@drawable/harryPotter2"
-                    tools:srcCompat="@drawable/harryPotter2" />
+                    app:srcCompat="@drawable/harrypotter2"
+                    tools:srcCompat="@drawable/harrypotter2" />
             </LinearLayout>
 
         </LinearLayout>
@@ -418,7 +418,7 @@
                 android:layout_marginTop="0dp"
                 android:gravity="center"
                 android:paddingTop="0dp"
-                android:text="@string/discover"
+                android:text="@string/reading"
                 android:textSize="12sp" />
         </LinearLayout>
 

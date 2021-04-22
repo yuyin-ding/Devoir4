@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5ECEC">
+
+    <LinearLayout
+        android:id="@+id/barre"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="659dp"
+        android:background="#12CDD4"
+        android:backgroundTint="#12CDD4"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                app:background="@drawable/ic_baseline_home_24"
+                app:backgroundTint="#12CDD4"
+                app:icon="@drawable/ic_baseline_home_24"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="55dp"
+                app:iconTint="#070707"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/homeText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/accueil"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/research"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/search"
+                android:clickable="true"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#090909"
+                app:icon="@drawable/search"
+                app:iconGravity="textEnd|start"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTint="#020202"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/search"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/readingLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/reading"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#12CDD4"
+                app:icon="@drawable/icon_eyeglasse"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="55dp"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/readingText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/reading"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/historyLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/history"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#12CDD4"
+                app:icon="@drawable/icon_clock"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/historyText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/history"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plusLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/icon_plus"
+                android:clickable="true"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#090909"
+                app:icon="@drawable/icon_plus"
+                app:iconGravity="textEnd|start"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTint="#020202"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/plusText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/plus"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginBottom="584dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/barre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/profil"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/ic_baseline_person_outline_24"
+            android:clickable="true"
+            android:focusable="true"
+            android:text=""
+            android:visibility="visible"
+            app:backgroundTint="#090909"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="66dp"
+            app:iconTintMode="multiply"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="224dp"
+                android:layout_height="62dp"
+                android:layout_margin="4dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/oval"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/logo" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="cursive"
+            android:text="@string/language"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="514dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/barre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/barre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modeLayout">
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/search" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/searchInput"
+                android:layout_width="305dp"
+                android:layout_height="match_parent"
+                android:background="#D5ECEC"
+                app:endIconTint="#FFFFFF"
+                app:hintTextColor="#0B0B0B">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputText"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:hint="Search an audiobook" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="500dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/barre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/screenshot_1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

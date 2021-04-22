@@ -687,7 +687,7 @@
         android:layout_width="64dp"
         android:layout_height="36dp"
         android:shadowColor="@color/white"
-        android:text="@string/sick"
+        android:text="sick"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:gravity="center_horizontal"

@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.devoir4_1.login.Reading_TimeActivity;
+import com.example.devoir4_2905.login.Reading_TimeActivity;
 
 public class Tracking extends AppCompatActivity {
     private TextView min;

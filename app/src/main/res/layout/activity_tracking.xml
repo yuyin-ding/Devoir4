@@ -97,7 +97,7 @@
         android:layout_gravity="center"
         android:fontFamily="cursive"
         android:gravity="center_horizontal"
-        android:text="@string/tracking"
+        android:text="tracking"
         android:textColor="#00CED1"
         android:textSize="50sp"
         android:textStyle="italic|bold"

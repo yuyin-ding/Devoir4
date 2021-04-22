@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookSuggestion"
+    android:background="#D5ECEC"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/barre"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="735dp"
+        android:background="#12CDD4"
+        android:backgroundTint="#12CDD4"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                app:background="@drawable/ic_baseline_home_24"
+                app:backgroundTint="#12CDD4"
+                app:icon="@drawable/ic_baseline_home_24"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="55dp"
+                app:iconTint="#070707"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/homeText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/accueil"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/research"
+                android:layout_width="53dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/search"
+                android:clickable="true"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#090909"
+                app:icon="@drawable/search"
+                app:iconGravity="textEnd|start"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTint="#020202"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/search"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/discoverLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            tools:ignore="DuplicateIds">
+
+            <Button
+                android:id="@+id/discover"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#12CDD4"
+                app:icon="@drawable/icon_eyeglasse"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="55dp"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/discoverText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/reading"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/historyLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/history"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                android:visibility="visible"
+                app:backgroundTint="#12CDD4"
+                app:icon="@drawable/icon_clock"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/historyText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/history"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plusLayout"
+            android:layout_width="82dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:clickable="true"
+                android:color="#00F6F5F5"
+                android:focusable="true"
+                android:text=""
+                android:textColor="#020202"
+                android:visibility="visible"
+                app:backgroundTint="#12CDD4"
+
+                app:icon="@drawable/icon_plus"
+                app:iconGravity="textEnd"
+                app:iconPadding="0dp"
+                app:iconSize="45dp"
+                app:iconTint="#090909"
+                app:iconTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/plusText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="@string/plus"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="263dp"
+        android:layout_height="84dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:text="My_mood"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="415dp"
+        android:layout_height="74dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:text="What is your mood right now?"
+        android:textSize="29sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="365dp"
+        android:layout_height="62dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:text="So check the book"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="147dp"
+        android:layout_height="74dp"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="626dp" />
+
+
+    <ImageView
+        android:layout_width="147dp"
+        android:layout_height="74dp"
+        android:src="@drawable/heartbeat"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/sick"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/sick"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/happy"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/happy"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+
+        <Button
+            android:id="@+id/ange"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/ange"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/angry"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/colere"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp">
+
+        <Button
+            android:id="@+id/choque"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/choque"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/sad"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/sad"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/bored"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/bored"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/pensif"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/pensif"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp">
+
+        <Button
+            android:id="@+id/coquin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/sweet"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/neutre"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/neutre"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/love"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/love"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/bad"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:color="#00F6F5F5"
+            android:visibility="visible"
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/bad"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="60dp"
+            app:iconTintMode="multiply" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:color="#00F6F5F5"
+        android:visibility="visible"
+        app:backgroundTint="#D5ECEC"
+        app:icon="@drawable/ic_baseline_more_horiz_24"
+        app:iconGravity="textEnd"
+        app:iconPadding="0dp"
+        app:iconSize="60dp"
+        app:iconTintMode="multiply"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="537dp" />
+
+    <TextView
+        android:id="@+id/textHappy"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="happy"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <TextView
+        android:id="@+id/textCalm"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
+        android:shadowColor="@color/white"
+        android:text="calm"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <TextView
+        android:id="@+id/textAngry"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="angry"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <TextView
+        android:id="@+id/plus2"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:shadowColor="@color/white"
+        android:text="plus"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <TextView
+        android:id="@+id/textSad"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="Sad"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <TextView
+        android:id="@+id/textBored"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:shadowColor="@color/white"
+        android:text="bored"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="415dp" />
+
+    <TextView
+        android:id="@+id/textPensif"
+        android:layout_width="99dp"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="pensive"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <TextView
+        android:id="@+id/textSexy"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="sexy"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/textNeutre"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:shadowColor="@color/white"
+        android:text="Neutral"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="519dp" />
+
+    <TextView
+        android:id="@+id/textLove"
+        android:layout_width="78dp"
+        android:layout_height="27dp"
+        android:shadowColor="@color/white"
+        android:text="inLove"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="519dp" />
+
+    <TextView
+        android:id="@+id/textBad"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:shadowColor="@color/white"
+        android:text="crying"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/textSick"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:shadowColor="@color/white"
+        android:text="@string/sick"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <TextView
+        android:id="@+id/textChoc"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="chocked"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="413dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

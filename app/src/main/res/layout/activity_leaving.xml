@@ -19,7 +19,7 @@
         android:textSize="25sp"
         android:textStyle="italic|bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteX="60dp"
         tools:layout_editor_absoluteY="95dp" />
 
     <LinearLayout
@@ -28,15 +28,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="95dp" />
-
 
     <LinearLayout
         android:id="@+id/barre"
         android:layout_width="match_parent"
         android:layout_height="71dp"
-        android:layout_marginTop="659dp"
+        android:layout_marginTop="689dp"
         android:background="#12CDD4"
         android:backgroundTint="#12CDD4"
         android:foregroundGravity="bottom"
@@ -91,7 +90,7 @@
 
         <LinearLayout
             android:id="@+id/searchLayout"
-            android:layout_width="82dp"
+            android:layout_width="73dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -172,7 +171,7 @@
 
         <LinearLayout
             android:id="@+id/historyLayout"
-            android:layout_width="82dp"
+            android:layout_width="84dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">

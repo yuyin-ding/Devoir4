@@ -20,13 +20,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="200dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="0dp"
             android:background="@drawable/ic_baseline_person_outline_24"
             android:clickable="true"
             android:focusable="true"
-            android:text=""
             android:visibility="visible"
             app:backgroundTint="#090909"
             app:iconGravity="textEnd"
@@ -165,7 +164,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="452dp">
+        android:layout_height="526dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -296,7 +295,7 @@
     <LinearLayout
         android:id="@+id/barre"
         android:layout_width="match_parent"
-        android:layout_height="71dp"
+        android:layout_height="74dp"
         android:layout_marginBottom="0dp"
         android:background="#12CDD4"
         android:backgroundTint="#12CDD4"
@@ -350,7 +349,7 @@
 
         <LinearLayout
             android:id="@+id/searchLayout"
-            android:layout_width="82dp"
+            android:layout_width="70dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -421,7 +420,7 @@
             <TextView
                 android:id="@+id/readingText"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
                 android:paddingTop="0dp"
@@ -431,7 +430,7 @@
 
         <LinearLayout
             android:id="@+id/historyLayout"
-            android:layout_width="82dp"
+            android:layout_width="wrap_content"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">

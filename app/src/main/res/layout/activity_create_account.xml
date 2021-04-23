@@ -38,6 +38,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             android:text="You can customize your profil at anytime in your settings for better recommendations "
             android:textColor="#12CDD4"
             android:textSize="15sp"
@@ -58,6 +64,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="@color/white"
                 android:hint="Full name* "
                 android:inputType="text"
@@ -131,6 +138,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
             android:text="Terms and conditions" />
 
         <Button
@@ -138,6 +146,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="50dp"
             android:backgroundTint="#12CDD4"
             android:gravity="center"
@@ -150,9 +159,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginBottom="30dp"
             android:backgroundTint="#D5ECEC"
-            android:src="@drawable/arrow_left" />
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/arrow_left" />
     </LinearLayout>
 
 </LinearLayout>

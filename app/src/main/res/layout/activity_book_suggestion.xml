@@ -12,7 +12,8 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:layout_marginBottom="584dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="657dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,8 +27,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="200dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
             android:layout_marginBottom="0dp"
             android:background="@drawable/ic_baseline_person_outline_24"
             android:clickable="true"
@@ -54,13 +55,13 @@
                 android:layout_width="224dp"
                 android:layout_height="62dp"
                 android:layout_margin="4dp"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
                 android:layout_marginRight="55dp"
                 android:layout_weight="1"
                 android:background="@drawable/oval"
                 android:gravity="center"
-                android:paddingLeft="16dp"
+                android:paddingLeft="13dp"
                 android:paddingTop="5dp"
                 android:paddingRight="16dp"
                 android:src="@drawable/logo" />
@@ -87,7 +88,7 @@
         android:id="@+id/linearLayout3"
         android:layout_width="408dp"
         android:layout_height="77dp"
-        android:layout_marginBottom="510dp"
+        android:layout_marginBottom="590dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,7 +135,7 @@
         android:layout_width="412dp"
         android:layout_height="42dp"
         android:layout_marginTop="1dp"
-        android:layout_marginBottom="466dp"
+        android:layout_marginBottom="546dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,12 +153,17 @@
             android:textSize="30sp"
             android:textStyle="italic|bold" />
 
-        <TextView
+        <Button
             android:id="@+id/emoActuel"
-            android:layout_width="8dp"
+            android:layout_width="3dp"
             android:layout_height="33dp"
             android:layout_weight="1"
-            android:text="Emoji ici" />
+            app:backgroundTint="#D5ECEC"
+            app:icon="@drawable/happy"
+            app:iconGravity="start"
+            app:iconPadding="0dp"
+            app:iconSize="30dp"
+            app:iconTintMode="multiply" />
     </LinearLayout>
 
     <LinearLayout
@@ -169,7 +175,7 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="490dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -210,7 +216,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="233dp"
         android:layout_marginRight="233dp"
-        android:layout_marginBottom="376dp"
+        android:layout_marginBottom="466dp"
         android:fontFamily="@font/graduate"
         android:text="Suggestion"
         android:textSize="20sp"
@@ -222,8 +228,8 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ScrollView
-        android:layout_width="415dp"
-        android:layout_height="370dp"
+        android:layout_width="409dp"
+        android:layout_height="459dp"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toTopOf="@+id/barre"
@@ -238,7 +244,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="458dp"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -289,7 +295,7 @@
         android:id="@+id/barre"
         android:layout_width="match_parent"
         android:layout_height="71dp"
-        android:layout_marginTop="659dp"
+        android:layout_marginTop="730dp"
         android:background="#12CDD4"
         android:backgroundTint="#12CDD4"
         android:foregroundGravity="bottom"
@@ -302,16 +308,16 @@
 
         <LinearLayout
             android:id="@+id/homeLayout"
-            android:layout_width="wrap_content"
+            android:layout_width="69dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/home"
-                android:layout_width="53dp"
+                android:layout_width="43dp"
                 android:layout_height="43dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="21dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="2dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="10dp"
@@ -342,7 +348,7 @@
 
         <LinearLayout
             android:id="@+id/searchLayout"
-            android:layout_width="82dp"
+            android:layout_width="59dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -351,8 +357,8 @@
                 android:id="@+id/research"
                 android:layout_width="53dp"
                 android:layout_height="43dp"
-                android:layout_marginStart="13dp"
-                android:layout_marginLeft="13dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="10dp"
@@ -383,7 +389,7 @@
 
         <LinearLayout
             android:id="@+id/discoverLayout"
-            android:layout_width="82dp"
+            android:layout_width="76dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -463,7 +469,7 @@
 
         <LinearLayout
             android:id="@+id/plusLayout"
-            android:layout_width="82dp"
+            android:layout_width="75dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">

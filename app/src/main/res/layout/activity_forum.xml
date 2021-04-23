@@ -13,7 +13,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:layout_marginBottom="584dp"
+        android:layout_marginBottom="654dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,11 +24,11 @@
             android:id="@+id/profil"
             android:layout_width="54dp"
             android:layout_height="54dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="14dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="200dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="0dp"
             android:background="@drawable/ic_baseline_person_outline_24"
             android:clickable="true"
@@ -93,8 +93,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textForum"
@@ -132,11 +134,11 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="417dp"
-        android:layout_height="504dp"
+        android:layout_width="393dp"
+        android:layout_height="589dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="152dp">
+        tools:layout_editor_absoluteY="144dp">
 
         <LinearLayout
             android:id="@+id/searchVerList"
@@ -241,7 +243,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
 
-
             </LinearLayout>
 
             <LinearLayout
@@ -280,7 +281,7 @@
         android:id="@+id/barre"
         android:layout_width="match_parent"
         android:layout_height="71dp"
-        android:layout_marginTop="659dp"
+        android:layout_marginTop="732dp"
         android:background="#12CDD4"
         android:backgroundTint="#12CDD4"
         android:foregroundGravity="bottom"
@@ -333,7 +334,7 @@
 
         <LinearLayout
             android:id="@+id/searchLayout"
-            android:layout_width="82dp"
+            android:layout_width="74dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -414,7 +415,7 @@
 
         <LinearLayout
             android:id="@+id/historyLayout"
-            android:layout_width="82dp"
+            android:layout_width="wrap_content"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">

@@ -5,17 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.devoir4_2905.login.Create_AccountActivity;
-import com.example.devoir4_2905.login.LoginActivity;
-import com.example.devoir4_2905.login.Reading_TimeActivity;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class AudioBook extends AppCompatActivity {
@@ -45,7 +40,7 @@ public class AudioBook extends AppCompatActivity {
         audioBook = findViewById(R.id.bookAudio1);
         audioBookRec = findViewById(R.id.bookRec1);
         audioBookRec2 = findViewById(R.id.bookRec2);
-        search = findViewById(R.id.searchButton);
+        search = findViewById(R.id.bellButton);
         inputSearch = findViewById(R.id.inputText);
         //la barre
         searchPage = findViewById(R.id.research);

@@ -23,10 +23,8 @@
             android:layout_width="44dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginBottom="0dp"
             android:background="@drawable/ic_baseline_person_outline_24"
             android:clickable="true"
@@ -56,13 +54,13 @@
                 android:layout_marginStart="55dp"
                 android:layout_marginLeft="55dp"
                 android:layout_marginRight="55dp"
-                android:layout_weight="1"
                 android:background="@drawable/oval"
                 android:gravity="center"
                 android:paddingLeft="16dp"
                 android:paddingTop="5dp"
                 android:paddingRight="16dp"
-                android:src="@drawable/logo" />
+                android:src="@drawable/logo"
+                android:contentDescription="TODO" />
         </FrameLayout>
 
 
@@ -72,10 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginStart="10dp"
-            android:layout_marginLeft="50dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
             android:fontFamily="cursive"
             android:text="@string/language"
             android:textSize="20sp"
@@ -98,10 +94,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="6dp"
-            android:layout_marginLeft="1dp"
             android:layout_marginTop="1dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
             android:layout_marginBottom="4dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/barre"
@@ -124,7 +118,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/search"
                 app:srcCompat="@drawable/search" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -144,15 +138,15 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="390dp"
-        android:layout_height="582dp"
+        android:layout_width="396dp"
+        android:layout_height="583dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="153dp">
+        tools:layout_editor_absoluteY="155dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
@@ -160,18 +154,16 @@
                 android:layout_width="414dp"
                 android:layout_height="63dp"
                 android:clickable="true"
-                android:orientation="horizontal"
-                android:focusable="true">
+                android:focusable="true"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/plusForum"
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:backgroundTint="#D5ECEC"
                     android:clickable="true"
@@ -186,6 +178,16 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textGoToForum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Discussion board"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -199,10 +201,8 @@
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp"
                     android:layout_marginBottom="25dp"
                     android:backgroundTint="#D5ECEC"
                     android:clickable="true"
@@ -217,6 +217,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/textGoToSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Settings"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -230,10 +239,8 @@
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:backgroundTint="#D5ECEC"
                     android:clickable="true"
@@ -248,6 +255,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/textGoToAppel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Social assistance contact"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -262,10 +278,8 @@
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:background="@drawable/roundedbutton"
                     android:clickable="true"
@@ -281,6 +295,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/textGoToBookSuggestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Book Suggestion"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -294,10 +317,8 @@
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:clickable="true"
                     android:focusable="true"
@@ -312,6 +333,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/textGoToFavoris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Favorite Books"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -319,17 +349,16 @@
                 android:layout_width="414dp"
                 android:layout_height="67dp"
                 android:clickable="true"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:focusable="true">
 
                 <Button
                     android:id="@+id/plusAudioBook"
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:clickable="true"
                     android:focusable="true"
@@ -344,6 +373,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/textGoToAudioBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Search Audio Books"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -357,10 +395,8 @@
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:clickable="true"
                     android:focusable="true"
@@ -375,6 +411,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/textGoToHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Help"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -382,6 +427,7 @@
                 android:layout_width="414dp"
                 android:layout_height="76dp"
                 android:clickable="true"
+                android:focusable="true"
                 android:orientation="horizontal">
 
                 <Button
@@ -389,10 +435,8 @@
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp"
                     android:layout_marginBottom="637dp"
                     android:clickable="true"
                     android:focusable="true"
@@ -407,6 +451,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/textGoToMood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Mood tracker/Calendar"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
@@ -441,10 +494,8 @@
                 android:layout_width="53dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginLeft="21dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="0dp"
                 android:clickable="true"
                 android:color="#00F6F5F5"
@@ -474,7 +525,7 @@
             android:id="@+id/searchLayout"
             android:layout_width="65dp"
             android:layout_height="69dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:orientation="vertical">
 
             <Button
@@ -482,10 +533,8 @@
                 android:layout_width="53dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="13dp"
-                android:layout_marginLeft="13dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="0dp"
                 android:background="@drawable/search"
                 android:clickable="true"
@@ -515,7 +564,7 @@
             android:id="@+id/readingLayout"
             android:layout_width="82dp"
             android:layout_height="69dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:orientation="vertical">
 
             <Button
@@ -523,10 +572,8 @@
                 android:layout_width="55dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="13dp"
-                android:layout_marginLeft="13dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="0dp"
                 android:clickable="true"
                 android:color="#00F6F5F5"
@@ -555,7 +602,7 @@
             android:id="@+id/historyLayout"
             android:layout_width="82dp"
             android:layout_height="69dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:orientation="vertical">
 
             <Button
@@ -563,10 +610,8 @@
                 android:layout_width="55dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="13dp"
-                android:layout_marginLeft="13dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="0dp"
                 android:clickable="true"
                 android:color="#00F6F5F5"
@@ -595,7 +640,7 @@
             android:id="@+id/plusLayout"
             android:layout_width="82dp"
             android:layout_height="69dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:orientation="vertical">
 
             <Button
@@ -603,10 +648,8 @@
                 android:layout_width="55dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="13dp"
-                android:layout_marginLeft="13dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="0dp"
                 android:background="@drawable/icon_plus"
                 android:clickable="true"

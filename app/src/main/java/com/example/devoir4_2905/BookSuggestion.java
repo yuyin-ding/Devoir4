@@ -36,7 +36,7 @@ public class BookSuggestion extends AppCompatActivity {
         bookSuggestionPage = findViewById(R.id.bookSuggestion);
         bookRec = findViewById(R.id.bookRec1);
         bookRec2 = findViewById(R.id.bookRec2);
-        search = findViewById(R.id.searchButton);
+        search = findViewById(R.id.bellButton);
         inputSearch = findViewById(R.id.inputText);
 
         //la barre

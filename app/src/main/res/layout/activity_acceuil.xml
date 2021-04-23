@@ -337,23 +337,207 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="411dp"
-        android:layout_height="595dp"
-        android:layout_marginBottom="3dp"
-        android:orientation="horizontal"
+    <ScrollView
+        android:layout_width="397dp"
+        android:layout_height="589dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="364dp"
-            android:layout_height="512dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/screenshot_3" />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleReadingNow"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="233dp"
+                android:layout_marginRight="233dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/graduate"
+                android:text="Reading Now"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/barre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.58"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/bookAudio1"
+                android:layout_width="125dp"
+                android:layout_height="173dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginBottom="4dp"
+                android:adjustViewBounds="false"
+                android:background="#D5ECEC"
+                android:cropToPadding="false"
+                android:foreground="@drawable/harrypotter"
+                android:foregroundGravity="fill_horizontal|fill_vertical"
+                android:scaleType="fitCenter"
+                android:tint="#D5ECEC"
+                app:layout_constraintBottom_toTopOf="@+id/barre"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
+                app:srcCompat="@drawable/harrypotter"
+                tools:srcCompat="@drawable/harrypotter" />
+
+            <TextView
+                android:id="@+id/titleRecommendation"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="233dp"
+                android:layout_marginRight="233dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/graduate"
+                android:text="Waiting For You"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/barre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.58"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bookRec1"
+                    android:layout_width="125dp"
+                    android:layout_height="173dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginBottom="4dp"
+                    android:adjustViewBounds="false"
+                    android:background="#D5ECEC"
+                    android:cropToPadding="false"
+                    android:foreground="@drawable/harrypotter"
+                    android:foregroundGravity="fill_horizontal|fill_vertical"
+                    android:scaleType="fitCenter"
+                    android:tint="#D5ECEC"
+                    app:layout_constraintBottom_toTopOf="@+id/barre"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
+                    app:srcCompat="@drawable/harrypotter"
+                    tools:srcCompat="@drawable/harrypotter" />
+
+                <ImageButton
+                    android:id="@+id/bookRec3"
+                    android:layout_width="125dp"
+                    android:layout_height="173dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="59dp"
+                    android:layout_marginRight="59dp"
+                    android:layout_marginBottom="176dp"
+                    android:adjustViewBounds="false"
+                    android:background="#D5ECEC"
+                    android:cropToPadding="false"
+                    android:foreground="@drawable/harrypotter2"
+                    android:foregroundGravity="fill_horizontal|fill_vertical"
+                    android:scaleType="fitCenter"
+                    android:tint="#D5ECEC"
+                    app:layout_constraintBottom_toTopOf="@+id/barre"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                    app:srcCompat="@drawable/harrypotter2"
+                    tools:srcCompat="@drawable/harrypotter2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleWhatsNew"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/graduate"
+                android:text="What's New"
+                android:textSize="20sp"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="233dp"
+                android:layout_marginRight="233dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bookRec4"
+                    android:layout_width="125dp"
+                    android:layout_height="173dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginBottom="4dp"
+                    android:adjustViewBounds="false"
+                    android:background="#D5ECEC"
+                    android:cropToPadding="false"
+                    android:foreground="@drawable/harrypotter"
+                    android:foregroundGravity="fill_horizontal|fill_vertical"
+                    android:scaleType="fitCenter"
+                    android:tint="#D5ECEC"
+                    app:layout_constraintBottom_toTopOf="@+id/barre"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
+                    app:srcCompat="@drawable/harrypotter"
+                    tools:srcCompat="@drawable/harrypotter" />
+
+                <ImageButton
+                    android:id="@+id/bookRec5"
+                    android:layout_width="125dp"
+                    android:layout_height="173dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="59dp"
+                    android:layout_marginRight="59dp"
+                    android:layout_marginBottom="176dp"
+                    android:adjustViewBounds="false"
+                    android:background="#D5ECEC"
+                    android:cropToPadding="false"
+                    android:foreground="@drawable/harrypotter2"
+                    android:foregroundGravity="fill_horizontal|fill_vertical"
+                    android:scaleType="fitCenter"
+                    android:tint="#D5ECEC"
+                    app:layout_constraintBottom_toTopOf="@+id/barre"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                    app:srcCompat="@drawable/harrypotter2"
+                    tools:srcCompat="@drawable/harrypotter2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

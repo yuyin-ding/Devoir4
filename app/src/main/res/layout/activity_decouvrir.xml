@@ -10,7 +10,7 @@
         android:id="@+id/barre"
         android:layout_width="match_parent"
         android:layout_height="71dp"
-        android:layout_marginTop="659dp"
+        android:layout_marginTop="710dp"
         android:background="#12CDD4"
         android:backgroundTint="#12CDD4"
         android:foregroundGravity="bottom"
@@ -63,7 +63,7 @@
 
         <LinearLayout
             android:id="@+id/searchLayout"
-            android:layout_width="82dp"
+            android:layout_width="72dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -144,7 +144,7 @@
 
         <LinearLayout
             android:id="@+id/historyLayout"
-            android:layout_width="82dp"
+            android:layout_width="wrap_content"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -228,7 +228,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:layout_marginBottom="584dp"
+        android:layout_marginBottom="624dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -242,8 +242,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="200dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="0dp"
             android:background="@drawable/ic_baseline_person_outline_24"
             android:clickable="true"
@@ -281,7 +281,6 @@
                 android:paddingRight="16dp"
                 android:src="@drawable/logo" />
         </FrameLayout>
-
 
         <TextView
             android:id="@+id/language"
@@ -346,7 +345,7 @@
                     android:id="@+id/inputText"
                     android:layout_width="300dp"
                     android:layout_height="48dp"
-                    android:hint="Search an audiobook" />
+                    android:hint="Search a book by type" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>

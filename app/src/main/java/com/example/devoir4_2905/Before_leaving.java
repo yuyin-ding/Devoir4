@@ -54,6 +54,8 @@ public class Before_leaving  extends AppCompatActivity {
                 startActivity(callActivity);           //directement lancer l'appel?
             }
         });
+
+
 //
 //        sick.setOnClickListener(new View.OnClickListener() {
 //            @SuppressLint("WrongConstant")

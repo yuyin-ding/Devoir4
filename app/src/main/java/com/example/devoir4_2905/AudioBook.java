@@ -108,45 +108,45 @@ public class AudioBook extends AppCompatActivity {
 
         //la barre
 
-//        searchPage.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            Intent Decouvrir = new Intent(AudioBook.this, Decouvrir.class);
-//            startActivity(Decouvrir);
-//        }
-//        });
+        searchPage.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent Decouvrir = new Intent(AudioBook.this, Decouvrir.class);
+            startActivity(Decouvrir);
+        }
+        });
 
-//        accueilPage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent Accueil = new Intent(AudioBook.this, Accueil.class);
-//                startActivity(Accueil);
-//            }
-//        });
+        accueilPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Accueil = new Intent(AudioBook.this, Acceuil.class);
+                startActivity(Accueil);
+            }
+        });
 
-//        readingPage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(AudioBook.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
-//
-//            }
-//        });
+        readingPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(AudioBook.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
-//        historyPage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent Historique = new Intent(AudioBook.this, Historique.class);
-//                startActivity(Historique);
-//            }
-//        });
+            }
+        });
 
-//        plusPage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent Plus = new Intent(AudioBook.this, Plus.class);
-//                startActivity(Plus);
-//            }
-//        });
+        historyPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Historique = new Intent(AudioBook.this, BiblioHistory.class);
+                startActivity(Historique);
+            }
+        });
+
+        plusPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Plus = new Intent(AudioBook.this, Plus.class);
+                startActivity(Plus);
+            }
+        });
 
     }
 

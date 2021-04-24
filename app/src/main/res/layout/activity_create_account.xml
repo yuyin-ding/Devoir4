@@ -111,6 +111,15 @@
                 android:inputType="textPassword"
                 android:textStyle="bold" />
         </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your password must contain at least 8 characters"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp">
+
+        </TextView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/confirm_password"

@@ -6,13 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.devoir4_2905.login.Reading_preferencesActivity;
 
 import java.sql.Time;
 
 public class Humeur extends AppCompatActivity {
-    private ImageButton arrow_right;
+    private ImageView arrowright;
     private Button sick;
     private Button happy;
     private Button calm;
@@ -29,12 +33,6 @@ public class Humeur extends AppCompatActivity {
     private Time temps;
 
 
-    public Time getTemps() {
-        return temps;
-    }
-    public void setTemps(Time temps) {
-        this.temps = temps;
-    }
 
 
 
@@ -43,7 +41,7 @@ public class Humeur extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_humeur);
 
-        arrow_right=findViewById(R.id.arrow_right);
+        arrowright=findViewById(R.id.arrowright);
         sick=findViewById(R.id.sick);
         happy=findViewById(R.id.happy);
         calm=findViewById(R.id.ange);
@@ -58,7 +56,7 @@ public class Humeur extends AppCompatActivity {
         crying=findViewById(R.id.bad);
         plus=findViewById(R.id.more);
 
-        arrow_right.setOnClickListener(new View.OnClickListener() {
+        arrowright.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent arrowActivity = new Intent(Humeur.this, BookSuggestion.class);
@@ -166,8 +164,7 @@ public class Humeur extends AppCompatActivity {
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent plus = new Intent(Humeur.this, BookSuggestion.class);  // à modifier
-                startActivity(plus);
+                Toast.makeText(Humeur.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
             }
         });
 }

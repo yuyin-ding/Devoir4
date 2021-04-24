@@ -288,9 +288,10 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
+        android:id="@+id/arrowright"
         android:layout_width="147dp"
         android:layout_height="74dp"
-        android:src="@drawable/ic_baseline_arrow_forward_24"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="288dp"
         tools:layout_editor_absoluteY="626dp" />

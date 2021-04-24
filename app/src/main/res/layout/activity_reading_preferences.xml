@@ -146,7 +146,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/arrow_left3"
+            android:id="@+id/arrow_leftt"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="0dp"
@@ -175,7 +175,7 @@
             app:tint="@color/white" />
 
         <ImageButton
-            android:id="@+id/arrow_right3"
+            android:id="@+id/arrow_rightt"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="120dp"

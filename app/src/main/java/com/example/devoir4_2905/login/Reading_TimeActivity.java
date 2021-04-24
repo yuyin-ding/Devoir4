@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.devoir4_2905.Humeur;
 import com.example.devoir4_2905.R;
 
 public class Reading_TimeActivity extends AppCompatActivity {
@@ -44,10 +45,12 @@ public class Reading_TimeActivity extends AppCompatActivity {
         picker.setMinValue(0);
         picker.setMaxValue(1000000);
 
+
+
         arrow_right3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent moodActivity= new Intent(Reading_TimeActivity.this, MoodActivity.class);
+                Intent moodActivity= new Intent(Reading_TimeActivity.this, Humeur.class);
                 startActivity(moodActivity);
 
             }
@@ -63,7 +66,7 @@ public class Reading_TimeActivity extends AppCompatActivity {
         ignore2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent moodActivity = new Intent(Reading_TimeActivity.this, MoodActivity.class);
+                Intent moodActivity = new Intent(Reading_TimeActivity.this, Humeur.class);
                 startActivity(moodActivity);
             }
         });

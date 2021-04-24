@@ -15,7 +15,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class BookSuggestion extends AppCompatActivity {
 
     private TextView bookSuggestionPage;
-    private TextView language;
+    private TextView languagee;
     private ImageButton bookRec;
     private ImageButton bookRec2;
     private ImageButton search;
@@ -32,7 +32,7 @@ public class BookSuggestion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_suggestion);
 
-        language = findViewById(R.id.language);
+        languagee= findViewById(R.id.languagee);
         bookSuggestionPage = findViewById(R.id.bookSuggestion);
         bookRec = findViewById(R.id.bookRec1);
         bookRec2 = findViewById(R.id.bookRec2);
@@ -46,7 +46,7 @@ public class BookSuggestion extends AppCompatActivity {
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
 
-        language.setOnClickListener(new View.OnClickListener() {
+        languagee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(BookSuggestion.this,"Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();

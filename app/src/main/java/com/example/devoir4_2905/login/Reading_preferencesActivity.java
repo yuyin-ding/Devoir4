@@ -17,8 +17,8 @@ public class Reading_preferencesActivity extends AppCompatActivity {
     ScrollView scrollView;
     TextView ignore;
     TextView language;
-    ImageButton arrow_left2;
-    ImageButton arrow_right2;
+    ImageButton arrow_leftt;
+    ImageButton arrow_rightt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +28,14 @@ public class Reading_preferencesActivity extends AppCompatActivity {
 
         ignore = findViewById(R.id.ignore);
         language = findViewById(R.id.language1);
-        arrow_left2 = findViewById(R.id.arrow_left2);
-        arrow_right2= findViewById(R.id.arrow_right2);
+        arrow_leftt = findViewById(R.id.arrow_leftt);
+        arrow_rightt= findViewById(R.id.arrow_rightt);
 
         scrollView = findViewById(R.id.scroll);
         //Hide the Scollbar
         scrollView.setHorizontalScrollBarEnabled(true);
 
-        arrow_right2.setOnClickListener(new View.OnClickListener() {
+        arrow_rightt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent readingTime = new Intent(Reading_preferencesActivity.this, Reading_TimeActivity.class);
@@ -43,7 +43,7 @@ public class Reading_preferencesActivity extends AppCompatActivity {
 
             }
         });
-        arrow_left2.setOnClickListener(new View.OnClickListener() {
+        arrow_leftt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent createAccount2 = new Intent(Reading_preferencesActivity.this, Create_AccountActivity.class);

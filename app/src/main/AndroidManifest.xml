@@ -16,6 +16,15 @@
         <activity android:name=".login.Create_AccountActivity" />
         <activity android:name=".login.Reading_preferencesActivity" />
         <activity android:name=".login.Reading_TimeActivity" />
+        <activity android:name=".Humeur" />
+        <activity android:name=".Acceuil" />
+        <activity android:name=".AudioBook" />
+        <activity android:name=".Before_leaving" />
+        <activity android:name=".BiblioHistory" />
+        <activity android:name=".Decouvrir" />
+        <activity android:name=".Favoris" />
+        <activity android:name=".Plus" />
+        <activity android:name=".Tracking" />
         <activity
             android:name=".login.MainActivity"
             android:label="BooksForU">

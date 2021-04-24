@@ -204,7 +204,6 @@
                 android:adjustViewBounds="false"
                 android:background="#D5ECEC"
                 android:cropToPadding="false"
-                android:drawable="@drawable/harryPotter"
                 android:foregroundGravity="fill_horizontal|fill_vertical"
                 android:scaleType="fitCenter"
                 android:tint="#D5ECEC"
@@ -212,6 +211,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageButton3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"/>
+            <!--android:drawable="@drawable/harryPotter"-->
 
             <TextView
                 android:id="@+id/titleRecommendation"
@@ -251,7 +251,6 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harryPotter2"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC"
@@ -259,6 +258,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/imageButton3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/titleSuggestion" />
+                <!--android:foreground="@drawable/harryPotter2"-->
 
                 <ImageButton
                     android:id="@+id/bookRec2"
@@ -273,7 +273,6 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harryPotter"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC"
@@ -281,6 +280,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageButton2"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+                <!--android:foreground="@drawable/harryPotter"-->
             </LinearLayout>
 
         </LinearLayout>

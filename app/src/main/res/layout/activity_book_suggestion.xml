@@ -69,7 +69,7 @@
 
 
         <TextView
-            android:id="@+id/language"
+            android:id="@+id/languagee"
             android:layout_width="74dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -260,10 +260,10 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harryPotter"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC" />
+                <!-- android:foreground="@drawable/harryPotter"-->
 
                 <ImageButton
                     android:id="@+id/bookRec2"
@@ -278,10 +278,10 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harryPotter2"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC" />
+                <!--android:foreground="@drawable/harryPotter2"-->
             </LinearLayout>
 
         </LinearLayout>

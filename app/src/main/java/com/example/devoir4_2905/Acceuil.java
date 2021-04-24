@@ -21,7 +21,7 @@ public class Acceuil extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceuil);
-/*
+
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
         readingPage = findViewById(R.id.discover);
@@ -46,6 +46,7 @@ public class Acceuil extends AppCompatActivity{
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +61,7 @@ public class Acceuil extends AppCompatActivity{
                 Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +70,7 @@ public class Acceuil extends AppCompatActivity{
                 startActivity(Plus);
             }
         });
-        */
+
 
     }
 }

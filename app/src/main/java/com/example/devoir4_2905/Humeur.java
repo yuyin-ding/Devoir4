@@ -180,6 +180,8 @@ public class Humeur extends AppCompatActivity {
                 Toast.makeText(Humeur.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
             }
         });
+        //la barre
+
         searchPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -191,15 +193,16 @@ public class Humeur extends AppCompatActivity {
         accueilPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Accueil = new Intent(Humeur.this, Acceuil.class);
-                startActivity(Accueil);
+                Intent Acceuil = new Intent(Humeur.this, Acceuil.class);
+                startActivity(Acceuil);
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Humeur.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -207,10 +210,10 @@ public class Humeur extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Historique = new Intent(Humeur.this, BiblioHistory.class);
-                startActivity(Historique);
+                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
+                startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

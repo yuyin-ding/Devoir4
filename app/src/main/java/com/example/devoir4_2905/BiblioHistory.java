@@ -46,10 +46,11 @@ public class BiblioHistory extends AppCompatActivity {
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(BiblioHistory.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -57,10 +58,10 @@ public class BiblioHistory extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent BiblioHistory = new Intent(BiblioHistory.this, BiblioHistory.class);
+                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

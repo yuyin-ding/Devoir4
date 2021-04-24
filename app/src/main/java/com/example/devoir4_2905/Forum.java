@@ -32,25 +32,26 @@ public class Forum extends AppCompatActivity {
         //la barre
 
         searchPage.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent Decouvrir = new Intent(Forum.this, Decouvrir.class);
-            startActivity(Decouvrir);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent Decouvrir = new Intent(Forum.this, Decouvrir.class);
+                startActivity(Decouvrir);
+            }
         });
 
         accueilPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Accueil = new Intent(Forum.this, Acceuil.class);
-                startActivity(Accueil);
+                Intent Acceuil = new Intent(Forum.this, Acceuil.class);
+                startActivity(Acceuil);
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Forum.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -58,10 +59,10 @@ public class Forum extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Historique = new Intent(Forum.this, BiblioHistory.class);
-                startActivity(Historique);
+                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
+                startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

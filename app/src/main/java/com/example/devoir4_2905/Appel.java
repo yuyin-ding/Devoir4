@@ -32,11 +32,11 @@ public class Appel extends AppCompatActivity {
         //la barre
 
         searchPage.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent Decouvrir = new Intent(Appel.this, Decouvrir.class);
-            startActivity(Decouvrir);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent Decouvrir = new Intent(Appel.this, Decouvrir.class);
+                startActivity(Decouvrir);
+            }
         });
 
         accueilPage.setOnClickListener(new View.OnClickListener() {
@@ -47,10 +47,11 @@ public class Appel extends AppCompatActivity {
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Appel.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -58,10 +59,10 @@ public class Appel extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent BiblioHistory = new Intent(Appel.this, BiblioHistory.class);
+                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,7 @@ public class Appel extends AppCompatActivity {
                 startActivity(Plus);
             }
         });
+
 
     }
 }

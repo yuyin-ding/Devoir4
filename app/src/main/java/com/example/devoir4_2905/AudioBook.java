@@ -109,25 +109,26 @@ public class AudioBook extends AppCompatActivity {
         //la barre
 
         searchPage.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent Decouvrir = new Intent(AudioBook.this, Decouvrir.class);
-            startActivity(Decouvrir);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent Decouvrir = new Intent(AudioBook.this, Decouvrir.class);
+                startActivity(Decouvrir);
+            }
         });
 
         accueilPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Accueil = new Intent(AudioBook.this, Acceuil.class);
-                startActivity(Accueil);
+                Intent Acceuil = new Intent(AudioBook.this, Acceuil.class);
+                startActivity(Acceuil);
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(AudioBook.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -135,10 +136,10 @@ public class AudioBook extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Historique = new Intent(AudioBook.this, BiblioHistory.class);
-                startActivity(Historique);
+                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
+                startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,6 +148,7 @@ public class AudioBook extends AppCompatActivity {
                 startActivity(Plus);
             }
         });
+
 
     }
 

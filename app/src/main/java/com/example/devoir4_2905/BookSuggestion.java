@@ -68,15 +68,16 @@ public class BookSuggestion extends AppCompatActivity {
         accueilPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Accueil = new Intent(BookSuggestion.this, Acceuil.class);
-                startActivity(Accueil);
+                Intent Acceuil = new Intent(BookSuggestion.this, Acceuil.class);
+                startActivity(Acceuil);
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(BookSuggestion.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -84,10 +85,10 @@ public class BookSuggestion extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Historique = new Intent(BookSuggestion.this, BiblioHistory.class);
-                startActivity(Historique);
+                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
+                startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

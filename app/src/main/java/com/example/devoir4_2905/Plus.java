@@ -48,13 +48,13 @@ public class Plus extends AppCompatActivity {
         plusHelp=findViewById(R.id.plusHelp);
         plusmoodTracker=findViewById(R.id.plusMood);
 
-/*
+
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
         readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
 
-        //la barre
+          //la barre
 
         searchPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,10 +72,11 @@ public class Plus extends AppCompatActivity {
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Plus.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -83,10 +84,18 @@ public class Plus extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent BiblioHistory = new Intent(Plus.this, BiblioHistory.class);
+                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
         });*/
+
+        plusPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Plus = new Intent(Plus.this, Plus.class);
+                startActivity(Plus);
+            }
+        });
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

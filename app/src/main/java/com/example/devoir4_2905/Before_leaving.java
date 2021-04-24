@@ -189,15 +189,16 @@ public class Before_leaving  extends AppCompatActivity {
         accueilPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Accueil = new Intent(Before_leaving.this, Acceuil.class);
-                startActivity(Accueil);
+                Intent Acceuil = new Intent(Before_leaving.this, Acceuil.class);
+                startActivity(Acceuil);
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Before_leaving.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -205,10 +206,10 @@ public class Before_leaving  extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Historique = new Intent(Before_leaving.this, BiblioHistory.class);
-                startActivity(Historique);
+                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
+                startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

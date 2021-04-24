@@ -6,14 +6,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.NumberPicker;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresPermission;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.devoir4_2905.MoodActivity;
 import com.example.devoir4_2905.R;
 
 public class Reading_TimeActivity extends AppCompatActivity {

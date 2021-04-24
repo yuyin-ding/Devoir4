@@ -13,7 +13,7 @@
         android:id="@+id/barre"
         android:layout_width="match_parent"
         android:layout_height="71dp"
-        android:layout_marginTop="735dp"
+        android:layout_marginTop="736dp"
         android:background="#12CDD4"
         android:backgroundTint="#12CDD4"
         android:foregroundGravity="bottom"

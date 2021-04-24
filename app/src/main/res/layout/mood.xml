@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,16 +12,10 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="76dp"
-        android:layout_marginBottom="584dp"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/barre"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
 
@@ -72,41 +67,200 @@
 
         <TextView
             android:id="@+id/language"
-            android:layout_width="92dp"
-            android:layout_height="31dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
             android:layout_gravity="right"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
             android:fontFamily="cursive"
-            android:gravity="center_horizontal"
-            android:text="Language"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:textStyle="italic|bold" />
+            android:textStyle="italic|bold"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/mood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="cursive"
+            android:textColor="@color/black"
+            android:text="Mood Tracker"
+            android:textSize="45sp"
+            android:textStyle="italic|bold"
+            android:layout_marginLeft="40dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/icon_calendar"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="30dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/starstuck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="147dp" />
+
+
+
+    <CalendarView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+
+    <TextView
+        android:layout_width="174dp"
+        android:layout_height="19dp"
+        android:text="Your mood at this time:"
+        android:textSize="15dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="561dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="92dp"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        android:textSize="20dp"
+        android:text="03:45"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="593dp"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+        android:id="@+id/selection"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="580dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/fool"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="172dp"
+        android:layout_height="35dp"
+        android:text="Recurrent mood:"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="630dp"
+        android:layout_marginLeft="20dp" />
 
 
     <LinearLayout
+        android:id="@+id/reg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginRight="172dp"
+        android:background="@drawable/fun"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="615dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <ImageButton
+            android:id="@+id/arrow_left3"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="255dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="0dp"
+            android:backgroundTint="#D5ECEC"
+            app:srcCompat="@drawable/arrow_left" />
+
+
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="75dp"
+            android:backgroundTint="#D5ECEC"
+            app:srcCompat="@drawable/ic_baseline_circle_24"
+            app:tint="@color/black" />
+
+        <ImageView
+            android:id="@+id/circle3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#D5ECEC"
+            app:srcCompat="@drawable/ic_baseline_circle_24"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/arrow_right3"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="0dp"
+            android:backgroundTint="#D5ECEC"
+            app:srcCompat="@drawable/arrow_right" />
+
+        </LinearLayout>
+    <LinearLayout
         android:id="@+id/barre"
-        android:layout_width="405dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="739dp"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
         android:background="#12CDD4"
+        android:layout_marginTop="15dp"
         android:backgroundTint="#12CDD4"
         android:foregroundGravity="bottom"
         android:gravity="bottom"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-
+        app:layout_constraintTop_toTopOf="parent">
         <LinearLayout
             android:id="@+id/homeLayout"
             android:layout_width="wrap_content"
@@ -149,7 +303,7 @@
 
         <LinearLayout
             android:id="@+id/searchLayout"
-            android:layout_width="73dp"
+            android:layout_width="72dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -189,15 +343,14 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/discoverLayout"
+            android:id="@+id/readingLayout"
             android:layout_width="82dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
-            android:orientation="vertical"
-            tools:ignore="DuplicateIds">
+            android:orientation="vertical">
 
             <Button
-                android:id="@+id/discover"
+                android:id="@+id/reading"
                 android:layout_width="55dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="13dp"
@@ -219,7 +372,7 @@
                 app:iconTintMode="multiply" />
 
             <TextView
-                android:id="@+id/discoverText"
+                android:id="@+id/readingText"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_marginTop="0dp"
@@ -231,7 +384,7 @@
 
         <LinearLayout
             android:id="@+id/historyLayout"
-            android:layout_width="82dp"
+            android:layout_width="wrap_content"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -278,27 +431,25 @@
 
             <Button
                 android:id="@+id/plus"
-                android:layout_width="42dp"
-                android:layout_height="37dp"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
                 android:layout_marginStart="13dp"
                 android:layout_marginLeft="13dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="0dp"
+                android:background="@drawable/icon_plus"
                 android:clickable="true"
-                android:color="#00F6F5F5"
                 android:focusable="true"
                 android:text=""
-                android:textColor="#020202"
                 android:visibility="visible"
-                app:backgroundTint="#12CDD4"
-
+                app:backgroundTint="#090909"
                 app:icon="@drawable/icon_plus"
-                app:iconGravity="textEnd"
+                app:iconGravity="textEnd|start"
                 app:iconPadding="0dp"
                 app:iconSize="45dp"
-                app:iconTint="#090909"
+                app:iconTint="#020202"
                 app:iconTintMode="multiply" />
 
             <TextView
@@ -311,157 +462,6 @@
                 android:text="@string/plus"
                 android:textSize="12sp" />
         </LinearLayout>
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/mood"
-        android:layout_width="272dp"
-        android:layout_height="56dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="596dp"
-        android:fontFamily="cursive"
-        android:textColor="@color/black"
-        android:text="Mood Tracker"
-        android:textSize="45sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.322"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.535"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="312dp"
-        android:layout_marginLeft="312dp"
-        android:src="@drawable/icon_calendar"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="63dp" />
-
-    <CalendarView
-        android:layout_width="353dp"
-        android:layout_height="311dp"
-        android:foregroundGravity="center_horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="14dp"
-
-        tools:layout_editor_absoluteY="250dp" />
-
-    <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:foregroundGravity="center_horizontal"
-        android:src="@drawable/starstuck"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="147dp" />
-
-    <TextView
-        android:layout_width="174dp"
-        android:layout_height="19dp"
-        android:text="Your mood at this time:"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="561dp" />
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="92dp"
-        android:layout_height="37dp"
-        android:orientation="horizontal"
-        android:textSize="20dp"
-        android:text="03:45"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="593dp" />
-
-    <LinearLayout
-        android:id="@+id/selection"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="580dp"
-        android:background="@drawable/fool"/>
-
-    <TextView
-        android:layout_width="172dp"
-        android:layout_height="35dp"
-        android:text="Recurrent mood:"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="630dp" />
-
-
-    <LinearLayout
-        android:id="@+id/reg"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginRight="172dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/fun"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="615dp"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="680dp">
-
-
-        <ImageView
-            android:id="@+id/circle1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="130dp"
-            android:layout_marginLeft="50dp"
-            android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/ic_baseline_circle_24"
-            app:tint="@color/black" />
-
-        <ImageView
-            android:id="@+id/circle3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/ic_baseline_circle_24"
-            app:tint="@color/white" />
-
-        <ImageButton
-            android:id="@+id/arrow_right3"
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginLeft="255dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="0dp"
-            android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/arrow_right" />
-
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

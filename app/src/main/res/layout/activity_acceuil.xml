@@ -85,7 +85,7 @@
         android:id="@+id/barre"
         android:layout_width="match_parent"
         android:layout_height="71dp"
-        android:layout_marginTop="730dp"
+        android:layout_marginTop="736dp"
         android:background="#12CDD4"
         android:backgroundTint="#12CDD4"
         android:foregroundGravity="bottom"
@@ -98,13 +98,13 @@
 
         <LinearLayout
             android:id="@+id/homeLayout"
-            android:layout_width="69dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/home"
-                android:layout_width="43dp"
+                android:layout_width="53dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="21dp"
@@ -138,7 +138,7 @@
 
         <LinearLayout
             android:id="@+id/searchLayout"
-            android:layout_width="70dp"
+            android:layout_width="68dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -147,8 +147,8 @@
                 android:id="@+id/research"
                 android:layout_width="53dp"
                 android:layout_height="43dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="10dp"
@@ -179,7 +179,7 @@
 
         <LinearLayout
             android:id="@+id/readingLayout"
-            android:layout_width="82dp"
+            android:layout_width="76dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -219,7 +219,7 @@
 
         <LinearLayout
             android:id="@+id/historyLayout"
-            android:layout_width="78dp"
+            android:layout_width="82dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -296,14 +296,13 @@
                 android:paddingTop="0dp"
                 android:text="@string/plus"
                 android:textSize="12sp" />
-
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout6"
-        android:layout_width="410dp"
-        android:layout_height="58dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginBottom="526dp"
@@ -319,9 +318,12 @@
             android:layout_width="137dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="50dp"
             android:fontFamily="cursive"
-            android:text="    Your mood today is"
-            android:textSize="30sp" />
+            android:layout_gravity="center"
+            android:text="Your mood today is"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp" />
 
         <Button
             android:id="@+id/emoActuel"
@@ -330,6 +332,7 @@
             android:layout_weight="1"
             app:backgroundTint="#D5ECEC"
             app:icon="@drawable/happy"
+            android:layout_gravity="center"
             app:iconGravity="start"
             app:iconPadding="0dp"
             app:iconSize="30dp"
@@ -384,7 +387,7 @@
                 android:adjustViewBounds="false"
                 android:background="#D5ECEC"
                 android:cropToPadding="false"
-                android:foreground="@drawable/harrypotter"
+                android:foreground="@drawable/harryPotter"
                 android:foregroundGravity="fill_horizontal|fill_vertical"
                 android:scaleType="fitCenter"
                 android:tint="#D5ECEC"
@@ -392,8 +395,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageButton3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
-                app:srcCompat="@drawable/harrypotter"
-                tools:srcCompat="@drawable/harrypotter" />
+                />
 
             <TextView
                 android:id="@+id/titleRecommendation"
@@ -433,16 +435,14 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harrypotter"
+                    android:foreground="@drawable/harryPotter2"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC"
                     app:layout_constraintBottom_toTopOf="@+id/barre"
                     app:layout_constraintEnd_toStartOf="@+id/imageButton3"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
-                    app:srcCompat="@drawable/harrypotter"
-                    tools:srcCompat="@drawable/harrypotter" />
+                    app:layout_constraintTop_toBottomOf="@+id/titleSuggestion" />
 
                 <ImageButton
                     android:id="@+id/bookRec3"
@@ -457,16 +457,14 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harrypotter2"
+                    android:foreground="@drawable/harryPotter"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC"
                     app:layout_constraintBottom_toTopOf="@+id/barre"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageButton2"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-                    app:srcCompat="@drawable/harrypotter2"
-                    tools:srcCompat="@drawable/harrypotter2" />
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
             </LinearLayout>
 
             <TextView
@@ -501,16 +499,14 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harrypotter"
+                    android:foreground="@drawable/harryPotter"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC"
                     app:layout_constraintBottom_toTopOf="@+id/barre"
                     app:layout_constraintEnd_toStartOf="@+id/imageButton3"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
-                    app:srcCompat="@drawable/harrypotter"
-                    tools:srcCompat="@drawable/harrypotter" />
+                    app:layout_constraintTop_toBottomOf="@+id/titleSuggestion" />
 
                 <ImageButton
                     android:id="@+id/bookRec5"
@@ -525,16 +521,14 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harrypotter2"
+                    android:foreground="@drawable/harryPotter2"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
                     android:tint="#D5ECEC"
                     app:layout_constraintBottom_toTopOf="@+id/barre"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageButton2"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-                    app:srcCompat="@drawable/harrypotter2"
-                    tools:srcCompat="@drawable/harrypotter2" />
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
             </LinearLayout>
 
         </LinearLayout>

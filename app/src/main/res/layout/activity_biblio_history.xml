@@ -339,7 +339,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp">
 
 
             <TextView
@@ -385,7 +389,7 @@
                         android:adjustViewBounds="false"
                         android:background="#D5ECEC"
                         android:cropToPadding="false"
-                        android:foreground="@drawable/harrypotter"
+                        android:foreground="@drawable/harryPotter"
                         android:foregroundGravity="fill_horizontal|fill_vertical"
                         android:scaleType="fitCenter"
                         android:tint="#D5ECEC"
@@ -393,8 +397,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
-                        app:srcCompat="@drawable/harrypotter"
-                        tools:srcCompat="@drawable/harrypotter" />
+                        />
 
                     <ProgressBar
                         android:id="@+id/progressBar"
@@ -423,16 +426,14 @@
                         android:adjustViewBounds="false"
                         android:background="#D5ECEC"
                         android:cropToPadding="false"
-                        android:foreground="@drawable/harrypotter2"
+                        android:foreground="@drawable/harryPotter2"
                         android:foregroundGravity="fill_horizontal|fill_vertical"
                         android:scaleType="fitCenter"
                         android:tint="#D5ECEC"
                         app:layout_constraintBottom_toTopOf="@+id/barre"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageButton2"
-                        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-                        app:srcCompat="@drawable/harrypotter2"
-                        tools:srcCompat="@drawable/harrypotter2" />
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
                     <ProgressBar
                         android:id="@+id/progressBar2"
@@ -482,7 +483,7 @@
                         android:adjustViewBounds="false"
                         android:background="#D5ECEC"
                         android:cropToPadding="false"
-                        android:foreground="@drawable/harrypotter"
+                        android:foreground="@drawable/harryPotter2"
                         android:foregroundGravity="fill_horizontal|fill_vertical"
                         android:scaleType="fitCenter"
                         android:tint="#D5ECEC"
@@ -490,8 +491,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
-                        app:srcCompat="@drawable/harrypotter"
-                        tools:srcCompat="@drawable/harrypotter" />
+                        />
 
                     <ProgressBar
                         android:id="@+id/progressBar3"
@@ -520,16 +520,14 @@
                         android:adjustViewBounds="false"
                         android:background="#D5ECEC"
                         android:cropToPadding="false"
-                        android:foreground="@drawable/harrypotter2"
+                        android:foreground="@drawable/harryPotter"
                         android:foregroundGravity="fill_horizontal|fill_vertical"
                         android:scaleType="fitCenter"
                         android:tint="#D5ECEC"
                         app:layout_constraintBottom_toTopOf="@+id/barre"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageButton2"
-                        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-                        app:srcCompat="@drawable/harrypotter2"
-                        tools:srcCompat="@drawable/harrypotter2" />
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
                     <ProgressBar
                         android:id="@+id/progressBar4"

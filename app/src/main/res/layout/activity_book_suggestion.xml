@@ -260,12 +260,10 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harrypotter"
+                    android:foreground="@drawable/harryPotter"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
-                    android:tint="#D5ECEC"
-                    app:srcCompat="@drawable/harrypotter"
-                    tools:srcCompat="@drawable/harrypotter" />
+                    android:tint="#D5ECEC" />
 
                 <ImageButton
                     android:id="@+id/bookRec2"
@@ -280,12 +278,10 @@
                     android:adjustViewBounds="false"
                     android:background="#D5ECEC"
                     android:cropToPadding="false"
-                    android:foreground="@drawable/harrypotter2"
+                    android:foreground="@drawable/harryPotter2"
                     android:foregroundGravity="fill_horizontal|fill_vertical"
                     android:scaleType="fitCenter"
-                    android:tint="#D5ECEC"
-                    app:srcCompat="@drawable/harrypotter2"
-                    tools:srcCompat="@drawable/harrypotter2" />
+                    android:tint="#D5ECEC" />
             </LinearLayout>
 
         </LinearLayout>

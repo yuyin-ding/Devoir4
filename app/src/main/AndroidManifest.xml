@@ -13,7 +13,6 @@
         <activity android:name=".Forum" />
         <activity android:name=".BookSuggestion" />
         <activity android:name=".login.LoginActivity" />
-        <activity android:name=".MoodActivity" />
         <activity android:name=".login.Create_AccountActivity" />
         <activity android:name=".login.Reading_preferencesActivity" />
         <activity android:name=".login.Reading_TimeActivity" />

@@ -396,12 +396,15 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="644dp">
+        tools:layout_editor_absoluteX="27dp">
 
         <ImageButton
             android:id="@+id/arrow_left2"
@@ -411,7 +414,8 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="30dp"
             android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/arrow_left" />
+            app:srcCompat="@drawable/arrow_left"
+            tools:ignore="VectorDrawableCompat" />
 
         <ImageView
             android:id="@+id/circle"
@@ -422,7 +426,8 @@
             android:layout_marginTop="30dp"
             android:backgroundTint="#D5ECEC"
             app:srcCompat="@drawable/ic_baseline_circle_24"
-            app:tint="@color/white" />
+            app:tint="@color/white"
+            tools:ignore="VectorDrawableCompat" />
 
         <ImageView
             android:id="@+id/circle2"
@@ -433,7 +438,8 @@
             android:layout_marginTop="30dp"
             android:backgroundTint="#D5ECEC"
             app:srcCompat="@drawable/ic_baseline_circle_24"
-            app:tint="@color/black" />
+            app:tint="@color/black"
+            tools:ignore="VectorDrawableCompat" />
 
         <ImageButton
             android:id="@+id/arrow_right2"
@@ -445,18 +451,22 @@
             android:layout_marginEnd="20dp"
             android:layout_marginRight="0dp"
             android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/arrow_right" />
+            app:srcCompat="@drawable/arrow_right"
+            tools:ignore="VectorDrawableCompat" />
 
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="327dp"
         android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725"
         app:srcCompat="@drawable/ic_baseline_star_outline_24"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="437dp" />
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/goals"
@@ -474,15 +484,20 @@
         android:id="@+id/minutes"
         android:layout_width="71dp"
         android:layout_height="44dp"
-        android:text="0"
         android:gravity="center_horizontal"
+        android:text="0"
         android:textColor="@color/black"
         android:textSize="30dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="269dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/barre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView7"
         android:layout_width="59dp"
         android:layout_height="43dp"
         android:gravity="center_horizontal"

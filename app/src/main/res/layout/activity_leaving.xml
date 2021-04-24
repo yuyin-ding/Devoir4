@@ -18,9 +18,13 @@
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="italic|bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="95dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -29,7 +33,9 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteY="95dp" >
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/barre"
@@ -254,18 +260,6 @@
     </LinearLayout>
 
 
-    <TextView
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:text="Click to call the social assistance"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="679dp" />
-
     <Button
         android:id="@+id/call"
         android:layout_width="88dp"
@@ -278,18 +272,21 @@
         app:iconPadding="0dp"
         app:iconSize="100dp"
         app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="592dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout11"
         android:layout_width="369dp"
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2"
@@ -355,39 +352,32 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textChoc"
-        android:layout_width="88dp"
-        android:layout_height="25dp"
+        android:id="@+id/textHappy"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
         android:gravity="center_horizontal"
         android:shadowColor="@color/white"
-        android:text="chocked"
+        android:text="happy"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="298dp" />
-
-    <TextView
-        android:id="@+id/textAngry"
-        android:layout_width="80dp"
-        android:layout_height="26dp"
-        android:gravity="center_horizontal"
-        android:shadowColor="@color/white"
-        android:text="angry"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout10"
         android:layout_width="369dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp">
+        app:layout_constraintVertical_bias="0.44"
+        tools:ignore="MissingConstraints">
 
         <Button
             android:id="@+id/coquin"
@@ -447,80 +437,22 @@
 
     </LinearLayout>
 
-
-
-    <Button
-        android:id="@+id/more"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:color="#00F6F5F5"
-        android:gravity="center_horizontal"
-
-        app:backgroundTint="#D5ECEC"
-        app:icon="@drawable/ic_baseline_more_horiz_24"
-        app:iconGravity="textEnd"
-        app:iconPadding="0dp"
-        app:iconSize="60dp"
-        app:iconTintMode="multiply"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="442dp" />
-
     <TextView
-        android:id="@+id/textPensif"
-        android:layout_width="99dp"
-        android:layout_height="30dp"
-        android:gravity="center_horizontal"
-        android:shadowColor="@color/white"
-        android:text="pensive"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="303dp" />
-
-    <TextView
-        android:id="@+id/textBored"
-        android:layout_width="74dp"
-        android:layout_height="28dp"
-        android:gravity="center_horizontal"
-        android:shadowColor="@color/white"
-        android:text="bored"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.583"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="300dp" />
-
-    <TextView
-        android:id="@+id/textSexy"
-        android:layout_width="74dp"
-        android:layout_height="28dp"
-        android:gravity="center_horizontal"
-        android:shadowColor="@color/white"
-        android:text="sexy"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="403dp" />
-
-    <TextView
-        android:id="@+id/textCalm"
+        android:id="@+id/textSick"
         android:layout_width="64dp"
-        android:layout_height="35dp"
+        android:layout_height="36dp"
         android:gravity="center_horizontal"
         android:shadowColor="@color/white"
-        android:text="calm"
+        android:text="sick"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textSad"
@@ -531,11 +463,13 @@
         android:text="Sad"
         android:textColor="@color/black"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textBad"
@@ -546,46 +480,161 @@
         android:text="crying"
         android:textColor="@color/black"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textSick"
-        android:layout_width="64dp"
-        android:layout_height="36dp"
+        android:id="@+id/textLove"
+        android:layout_width="78dp"
+        android:layout_height="27dp"
         android:gravity="center_horizontal"
         android:shadowColor="@color/white"
-        android:text="sick"
+        android:text="inLove"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="209dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textHappy"
+        android:id="@+id/textCalm"
         android:layout_width="64dp"
         android:layout_height="35dp"
         android:gravity="center_horizontal"
         android:shadowColor="@color/white"
-        android:text="happy"
+        android:text="calm"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="205dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textChoc"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="chocked"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textSexy"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="sexy"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textPensif"
+        android:layout_width="99dp"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="pensive"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textBored"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="bored"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textAngry"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="angry"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/barre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textNeutre"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/white"
+        android:text="Neutral"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout9"
         android:layout_width="369dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp">
+        app:layout_constraintVertical_bias="0.323"
+        tools:ignore="MissingConstraints">
 
         <Button
             android:id="@+id/choque"
@@ -645,35 +694,27 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textLove"
-        android:layout_width="78dp"
-        android:layout_height="27dp"
+    <Button
+        android:id="@+id/more"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:color="#00F6F5F5"
         android:gravity="center_horizontal"
-        android:shadowColor="@color/white"
-        android:text="inLove"
-        android:textColor="@color/black"
-        android:textSize="20dp"
+        android:visibility="visible"
+        app:backgroundTint="#D5ECEC"
+        app:icon="@drawable/ic_baseline_more_horiz_24"
+        app:iconGravity="textEnd"
+        app:iconPadding="0dp"
+        app:iconSize="60dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="404dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textNeutre"
-        android:layout_width="74dp"
-        android:layout_height="28dp"
-        android:gravity="center_horizontal"
-        android:shadowColor="@color/white"
-        android:text="Neutral"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="404dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -685,11 +726,15 @@ it with your loved ones or contact social support.
 Take Care of Yourself"
         android:textSize="15sp"
         android:textStyle="normal|bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/barre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.691"
+        tools:ignore="MissingConstraints" />
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
@@ -712,5 +757,20 @@ Take Care of Yourself"
             android:paddingRight="16dp"
             android:src="@drawable/logo" />
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:text="Click to call the social assistance"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

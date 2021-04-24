@@ -40,11 +40,13 @@ public class BookSuggestion extends AppCompatActivity {
         inputSearch = findViewById(R.id.inputText);
 
         //la barre
+
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
-        readingPage = findViewById(R.id.readingButton);
+        readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
+
 
         languagee.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,4 +1,4 @@
-package com.example.devoir4_2905;
+package com.example.devoir4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -119,16 +119,15 @@ public class AudioBook extends AppCompatActivity {
         accueilPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Acceuil = new Intent(AudioBook.this, Acceuil.class);
-                startActivity(Acceuil);
+                Intent Accueil = new Intent(AudioBook.this, Acceuil.class);
+                startActivity(Accueil);
             }
         });
 
-/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+                Toast.makeText(AudioBook.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -136,10 +135,10 @@ public class AudioBook extends AppCompatActivity {
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
-                startActivity(BiblioHistory);
+                Intent Historique = new Intent(AudioBook.this, BiblioHistory.class);
+                startActivity(Historique);
             }
-        });*/
+        });
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -148,7 +147,6 @@ public class AudioBook extends AppCompatActivity {
                 startActivity(Plus);
             }
         });
-
 
     }
 

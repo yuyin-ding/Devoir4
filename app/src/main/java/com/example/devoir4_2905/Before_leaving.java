@@ -1,4 +1,4 @@
-package com.example.devoir4_2905;
+package com.example.devoir4;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.devoir4_2905.login.MainActivity;
 
 
 public class Before_leaving  extends AppCompatActivity {
@@ -42,7 +40,7 @@ public class Before_leaving  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaving);
-        
+
         call=findViewById(R.id.call);
         sick=findViewById(R.id.sick);
         happy=findViewById(R.id.happy);

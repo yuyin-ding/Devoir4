@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eac84481-49ad-4f6b-91bd-34d4872db8d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/res/layout/activity_forum.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_forum.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/example/devoir4_2905/Acceuil.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/example/devoir4_2905/Acceuil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/example/devoir4_2905/Before_leaving.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/example/devoir4_2905/Before_leaving.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/example/devoir4_2905/BiblioHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/example/devoir4_2905/BiblioHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/example/devoir4_2905/BookSuggestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/example/devoir4_2905/BookSuggestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/example/devoir4_2905/Favoris.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/example/devoir4_2905/Favoris.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/example/devoir4_2905/Forum.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/example/devoir4_2905/Forum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/example/devoir4_2905/Humeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/example/devoir4_2905/Humeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/com/example/devoir4_2905/Tracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/example/devoir4_2905/Tracking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_acceuil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_acceuil.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_audiobook.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_audiobook.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_biblio_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_biblio_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_book_suggestion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_book_suggestion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_favoris.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_favoris.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_humeur.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_humeur.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_leaving.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_leaving.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_tracking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_tracking.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/mood.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/mood.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,5 +52,22 @@
       <updated>1619003254024</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="102" key="FileChooserDialogImpl" timestamp="1619273302592">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="100" y="102" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1619273302592" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/java/com/example/devoir4_2905/Favoris.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.example.devoir4_2905;
+package com.example.devoir4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,7 +25,7 @@ public class Appel extends AppCompatActivity {
 
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
-        readingPage = findViewById(R.id.discover);
+        readingPage = findViewById(R.id.readingButton);
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
 

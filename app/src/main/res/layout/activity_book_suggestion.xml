@@ -183,12 +183,13 @@
         app:layout_constraintTop_toBottomOf="@+id/modeLayout">
 
         <ImageButton
-            android:id="@+id/bellButton"
+            android:id="@id/bellButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/search" />
+            app:srcCompat="@drawable/search"
+            tools:ignore="VectorDrawableCompat" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/searchInput"
@@ -247,41 +248,35 @@
                 android:layout_height="458dp"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/bookRec1"
-                    android:layout_width="125dp"
-                    android:layout_height="173dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="176dp"
-                    android:adjustViewBounds="false"
-                    android:background="#D5ECEC"
-                    android:cropToPadding="false"
-                    android:foregroundGravity="fill_horizontal|fill_vertical"
-                    android:scaleType="fitCenter"
-                    android:tint="#D5ECEC" />
-                <!-- android:foreground="@drawable/harryPotter"-->
 
-                <ImageButton
+                <Button
+                    android:id="@+id/bookRec1"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="30dp"
+                    android:color="#00F6F5F5"
+                    android:visibility="visible"
+                    app:backgroundTint="#D5ECEC"
+                    app:icon="@drawable/prince"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="175dp"
+                    app:iconTintMode="multiply" />
+
+
+                <Button
                     android:id="@+id/bookRec2"
-                    android:layout_width="125dp"
-                    android:layout_height="173dp"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginLeft="23dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginEnd="59dp"
-                    android:layout_marginRight="59dp"
-                    android:layout_marginBottom="176dp"
-                    android:adjustViewBounds="false"
-                    android:background="#D5ECEC"
-                    android:cropToPadding="false"
-                    android:foregroundGravity="fill_horizontal|fill_vertical"
-                    android:scaleType="fitCenter"
-                    android:tint="#D5ECEC" />
-                <!--android:foreground="@drawable/harryPotter2"-->
+                    android:layout_width="135dp"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="30dp"
+                    android:color="#00F6F5F5"
+                    android:visibility="visible"
+                    app:backgroundTint="#D5ECEC"
+                    app:icon="@drawable/pere"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="175dp"
+                    app:iconTintMode="multiply" />
             </LinearLayout>
 
         </LinearLayout>

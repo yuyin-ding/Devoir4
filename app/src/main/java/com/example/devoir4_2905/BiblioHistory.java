@@ -1,4 +1,4 @@
-package com.example.devoir4_2905;
+package com.example.devoir4;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BiblioHistory extends AppCompatActivity {
-
+    private Button prince;
     //la barre
     private Button searchPage;
     private Button accueilPage;
@@ -21,7 +21,7 @@ public class BiblioHistory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_biblio_history);
-
+        prince= findViewById(R.id.bookRec1);
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
         readingPage = findViewById(R.id.discover);
@@ -68,6 +68,14 @@ public class BiblioHistory extends AppCompatActivity {
             public void onClick(View v) {
                 Intent Plus = new Intent(BiblioHistory.this, Plus.class);
                 startActivity(Plus);
+            }
+        });
+
+        prince.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent prince= new Intent(BiblioHistory.this,Prince.class);
+                startActivity(prince);
             }
         });
     }

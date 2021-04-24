@@ -172,7 +172,8 @@
             android:layout_marginBottom="30dp"
             android:backgroundTint="#D5ECEC"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/arrow_left" />
+            app:srcCompat="@drawable/arrow_left"
+            tools:ignore="VectorDrawableCompat" />
     </LinearLayout>
 
 </LinearLayout>

@@ -357,7 +357,7 @@
                 android:layout_marginRight="233dp"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/graduate"
-                android:text="History"
+                android:text="SelfDevelopment"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/barre"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -376,28 +376,18 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/bookRec1"
-                        android:layout_width="125dp"
-                        android:layout_height="173dp"
-                        android:layout_marginStart="22dp"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="23dp"
-                        android:layout_marginRight="23dp"
-                        android:layout_marginBottom="4dp"
-                        android:adjustViewBounds="false"
-                        android:background="#D5ECEC"
-                        android:cropToPadding="false"
-                        android:foregroundGravity="fill_horizontal|fill_vertical"
-                        android:scaleType="fitCenter"
-                        android:tint="#D5ECEC"
-                        app:layout_constraintBottom_toTopOf="@+id/barre"
-                        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
-                        />
-                   <!-->android:foreground="@drawable/harryPotter"-->
+                    <Button
+                        android:id="@+id/bookRec2"
+                        android:layout_width="155dp"
+                        android:layout_height="175dp"
+                        android:color="#00F6F5F5"
+                        android:visibility="visible"
+                        app:backgroundTint="#D5ECEC"
+                        app:icon="@drawable/maktub"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="0dp"
+                        app:iconSize="175dp"
+                        app:iconTintMode="multiply" />
 
                     <ProgressBar
                         android:id="@+id/progressBar"
@@ -409,31 +399,23 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="208dp"
+                    android:layout_height="185dp"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/bookRec3"
-                        android:layout_width="125dp"
-                        android:layout_height="173dp"
-                        android:layout_marginStart="23dp"
-                        android:layout_marginLeft="23dp"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginEnd="59dp"
-                        android:layout_marginRight="59dp"
-                        android:layout_marginBottom="4dp"
-                        android:adjustViewBounds="false"
-                        android:background="#D5ECEC"
-                        android:cropToPadding="false"
-                        android:foregroundGravity="fill_horizontal|fill_vertical"
-                        android:scaleType="fitCenter"
-                        android:tint="#D5ECEC"
-                        app:layout_constraintBottom_toTopOf="@+id/barre"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-                        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-                    <!-- android:foreground="@drawable/harryPotter2"-->
+                    <Button
+                        android:id="@+id/bookRec1"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+
+                        android:color="#00F6F5F5"
+                        android:visibility="visible"
+                        app:backgroundTint="#D5ECEC"
+                        app:icon="@drawable/prince"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="0dp"
+                        app:iconSize="175dp"
+                        app:iconTintMode="multiply" />
 
                     <ProgressBar
                         android:id="@+id/progressBar2"
@@ -470,28 +452,19 @@
                     android:layout_height="211dp"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/bookRec4"
+                    <Button
+                        android:id="@+id/book1"
                         android:layout_width="125dp"
-                        android:layout_height="173dp"
-                        android:layout_marginStart="22dp"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="23dp"
-                        android:layout_marginRight="23dp"
-                        android:layout_marginBottom="4dp"
-                        android:adjustViewBounds="false"
-                        android:background="#D5ECEC"
-                        android:cropToPadding="false"
-                        android:foregroundGravity="fill_horizontal|fill_vertical"
-                        android:scaleType="fitCenter"
-                        android:tint="#D5ECEC"
-                        app:layout_constraintBottom_toTopOf="@+id/barre"
-                        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/titleSuggestion"
-                        />
-                    <!--android:foreground="@drawable/harryPotter2"-->
+                        android:layout_height="175dp"
+                        android:layout_marginLeft="30dp"
+                        android:color="#00F6F5F5"
+                        android:visibility="visible"
+                        app:backgroundTint="#D5ECEC"
+                        app:icon="@drawable/fault"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="0dp"
+                        app:iconSize="175dp"
+                        app:iconTintMode="multiply" />
 
                     <ProgressBar
                         android:id="@+id/progressBar3"
@@ -507,27 +480,21 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/bookRec5"
+
+                    <Button
+                        android:id="@+id/book1"
                         android:layout_width="125dp"
-                        android:layout_height="173dp"
-                        android:layout_marginStart="23dp"
-                        android:layout_marginLeft="23dp"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginEnd="59dp"
-                        android:layout_marginRight="59dp"
-                        android:layout_marginBottom="4dp"
-                        android:adjustViewBounds="false"
-                        android:background="#D5ECEC"
-                        android:cropToPadding="false"
-                        android:foregroundGravity="fill_horizontal|fill_vertical"
-                        android:scaleType="fitCenter"
-                        android:tint="#D5ECEC"
-                        app:layout_constraintBottom_toTopOf="@+id/barre"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-                        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-                    <!--android:foreground="@drawable/harryPotter"-->
+                        android:layout_height="175dp"
+                        android:layout_marginLeft="30dp"
+                        android:color="#00F6F5F5"
+                        android:visibility="visible"
+                        app:backgroundTint="#D5ECEC"
+                        app:icon="@drawable/shades"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="0dp"
+                        app:iconSize="175dp"
+                        app:iconTintMode="multiply"
+                        tools:ignore="DuplicateIds" />
 
                     <ProgressBar
                         android:id="@+id/progressBar4"

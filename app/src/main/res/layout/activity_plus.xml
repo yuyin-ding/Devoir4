@@ -121,7 +121,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/search"
-                app:srcCompat="@drawable/search" />
+                app:srcCompat="@drawable/search"
+                tools:ignore="VectorDrawableCompat" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/searchInput"

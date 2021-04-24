@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D5ECEC">
+    tools:context=".BookSuggestion"
+    android:background="#D5ECEC"
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/barre"
         android:layout_width="match_parent"
         android:layout_height="71dp"
-        android:layout_marginTop="736dp"
+        android:layout_marginTop="730dp"
         android:background="#12CDD4"
         android:backgroundTint="#12CDD4"
         android:foregroundGravity="bottom"
@@ -23,16 +25,16 @@
 
         <LinearLayout
             android:id="@+id/homeLayout"
-            android:layout_width="wrap_content"
+            android:layout_width="69dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/home"
-                android:layout_width="53dp"
+                android:layout_width="43dp"
                 android:layout_height="43dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="21dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="2dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="10dp"
@@ -63,7 +65,7 @@
 
         <LinearLayout
             android:id="@+id/searchLayout"
-            android:layout_width="72dp"
+            android:layout_width="59dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -72,8 +74,8 @@
                 android:id="@+id/research"
                 android:layout_width="53dp"
                 android:layout_height="43dp"
-                android:layout_marginStart="13dp"
-                android:layout_marginLeft="13dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="10dp"
@@ -103,14 +105,14 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/readingLayout"
-            android:layout_width="82dp"
+            android:id="@+id/discoverLayout"
+            android:layout_width="76dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/reading"
+                android:id="@+id/discover"
                 android:layout_width="55dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="13dp"
@@ -132,7 +134,7 @@
                 app:iconTintMode="multiply" />
 
             <TextView
-                android:id="@+id/readingText"
+                android:id="@+id/discoverText"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_marginTop="0dp"
@@ -144,7 +146,7 @@
 
         <LinearLayout
             android:id="@+id/historyLayout"
-            android:layout_width="wrap_content"
+            android:layout_width="82dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -184,7 +186,7 @@
 
         <LinearLayout
             android:id="@+id/plusLayout"
-            android:layout_width="82dp"
+            android:layout_width="75dp"
             android:layout_height="69dp"
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
@@ -199,17 +201,19 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="0dp"
-                android:background="@drawable/icon_plus"
                 android:clickable="true"
+                android:color="#00F6F5F5"
                 android:focusable="true"
                 android:text=""
+                android:textColor="#020202"
                 android:visibility="visible"
-                app:backgroundTint="#090909"
+                app:backgroundTint="#12CDD4"
+
                 app:icon="@drawable/icon_plus"
-                app:iconGravity="textEnd|start"
+                app:iconGravity="textEnd"
                 app:iconPadding="0dp"
                 app:iconSize="45dp"
-                app:iconTint="#020202"
+                app:iconTint="#090909"
                 app:iconTintMode="multiply" />
 
             <TextView
@@ -224,151 +228,138 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
-        android:layout_marginBottom="624dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/barre"
+
+    <Button
+        android:id="@+id/bookCov2"
+        android:layout_width="188dp"
+        android:layout_height="251dp"
+        android:color="#00F6F5F5"
+        android:visibility="visible"
+        app:backgroundTint="#D5ECEC"
+        app:icon="@drawable/fault"
+        app:iconGravity="textEnd"
+        app:iconPadding="0dp"
+        app:iconSize="250dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/profil"
-            android:layout_width="44dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="0dp"
-            android:background="@drawable/ic_baseline_person_outline_24"
-            android:clickable="true"
-            android:focusable="true"
-            android:text=""
-            android:visibility="visible"
-            app:backgroundTint="#090909"
-            app:iconGravity="textEnd"
-            app:iconPadding="0dp"
-            app:iconSize="66dp"
-            app:iconTintMode="multiply"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="224dp"
-                android:layout_height="62dp"
-                android:layout_margin="4dp"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginRight="55dp"
-                android:layout_weight="1"
-                android:background="@drawable/oval"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingTop="5dp"
-                android:paddingRight="16dp"
-                android:src="@drawable/logo" />
-        </FrameLayout>
-
-        <TextView
-            android:id="@+id/language"
-            android:layout_width="74dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:fontFamily="cursive"
-            android:text="@string/language"
-            android:textSize="20sp"
-            android:textStyle="italic|bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout8"
-        android:layout_width="413dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="514dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/barre"
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="244dp"
+        android:layout_height="43dp"
+        android:numStars="5"
+        android:rating="3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638"
+        tools:ignore="MissingConstraints" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="36dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="4dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/barre"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/modeLayout">
-
-            <ImageButton
-                android:id="@+id/bellButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:contentDescription="TODO"
-                app:srcCompat="@drawable/search"
-                tools:ignore="VectorDrawableCompat" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/searchInput"
-                android:layout_width="305dp"
-                android:layout_height="match_parent"
-                android:background="#D5ECEC"
-                app:endIconTint="#FFFFFF"
-                app:hintTextColor="#0B0B0B">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputText"
-                    android:layout_width="300dp"
-                    android:layout_height="48dp"
-                    android:hint="Search a book by type" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="408dp"
-        android:layout_height="500dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="14dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/barre"
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="294dp"
+        android:layout_height="127dp"
+        android:gravity="center_horizontal"
+        android:text="The Fault Is In Our Stars"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441"
+        tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/screenshot_1" />
-    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="286dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:text="A novel"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/john"
+        android:layout_width="295dp"
+        android:layout_height="58dp"
+        android:color="#00F6F5F5"
+        android:gravity="center_horizontal"
+        android:text="John Green "
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:visibility="visible"
+        app:backgroundTint="#D5ECEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/fav"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_favorite_24"
+        android:backgroundTint="#FF1493"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="47dp"
+        android:text="Resume"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/barre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“But it is the nature of stars to cross,
+        and never was Shakespeare more wrong than when he has Cassius note, The fault, dear Brutus, is not in our stars / But in ourselves.”"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/barre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

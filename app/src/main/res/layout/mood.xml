@@ -9,23 +9,24 @@
     android:orientation="vertical">
 
 
+    <Button
+        android:id="@+id/profil"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_person_outline_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible"
+        app:backgroundTint="#090909"
+        app:iconGravity="textEnd"
+        app:iconPadding="0dp"
+        app:iconSize="66dp"
+        app:iconTintMode="multiply"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="7dp" />
 
-        <Button
-            android:id="@+id/profil"
-            android:layout_width="44dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_person_outline_24"
-            android:clickable="true"
-            android:focusable="true"
-            android:visibility="visible"
-            app:backgroundTint="#090909"
-            app:iconGravity="textEnd"
-            app:iconPadding="0dp"
-            app:iconSize="66dp"
-            app:iconTintMode="multiply"
-            tools:ignore="MissingConstraints" />
-
-        <FrameLayout
+    <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints">
@@ -123,6 +124,7 @@
         android:layout_height="50dp"
         android:background="@drawable/fool"
         android:orientation="vertical"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.326"
@@ -164,80 +166,39 @@
         app:layout_constraintVertical_bias="0.812"
         tools:ignore="MissingConstraints" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout12"
-        android:layout_width="385dp"
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#D5ECEC"
+        app:srcCompat="@drawable/ic_baseline_circle_24"
+        app:tint="@color/black"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="686dp" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#D5ECEC"
+        app:srcCompat="@drawable/ic_baseline_circle_24"
+        app:tint="@color/white"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="686dp" />
+
+    <ImageButton
+        android:id="@+id/arrow_right3"
+        android:layout_width="100dp"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="672dp"
+        android:backgroundTint="#D5ECEC"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906"
-        tools:ignore="MissingConstraints">
-
-
-        <ImageButton
-            android:id="@+id/arrow_left3"
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="255dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="0dp"
-            android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/arrow_left"
-            tools:ignore="VectorDrawableCompat" />
-
-        <ImageView
-            android:id="@+id/circle1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="75dp"
-            android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/ic_baseline_circle_24"
-            app:tint="@color/black"
-            tools:ignore="VectorDrawableCompat" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="189dp"
-            android:layout_height="61dp"
-            android:layout_margin="4dp"
-            android:layout_marginStart="55dp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginRight="55dp"
-            android:layout_weight="1"
-            android:background="@drawable/oval"
-            android:gravity="center"
-            android:paddingLeft="16dp"
-            android:paddingTop="5dp"
-            android:paddingRight="16dp"
-            android:src="@drawable/logo" />
-
-        <ImageView
-            android:id="@+id/circle3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/ic_baseline_circle_24"
-            app:tint="@color/white"
-            tools:ignore="VectorDrawableCompat" />
-
-        <ImageButton
-            android:id="@+id/arrow_right3"
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="110dp"
-            android:layout_marginLeft="255dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="0dp"
-            android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/arrow_right"
-            tools:ignore="VectorDrawableCompat" />
-
-    </LinearLayout>
+        app:srcCompat="@drawable/arrow_right"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"
+        tools:layout_editor_absoluteX="278dp" />
 
     <LinearLayout
         android:id="@+id/barre"
@@ -335,6 +296,22 @@
                 android:paddingTop="0dp"
                 android:text="@string/search"
                 android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="189dp"
+                android:layout_height="61dp"
+                android:layout_margin="4dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/oval"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/logo" />
         </LinearLayout>
 
         <LinearLayout

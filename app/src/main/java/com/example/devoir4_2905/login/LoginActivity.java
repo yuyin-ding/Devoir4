@@ -1,4 +1,4 @@
-package com.example.devoir4_2905.login;
+package com.example.devoir4.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.devoir4_2905.Humeur;
-import com.example.devoir4_2905.R;
+import com.example.devoir4.Humeur;
+import com.example.devoir4.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {

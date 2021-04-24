@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -152,7 +153,8 @@
             android:layout_marginStart="0dp"
             android:layout_marginLeft="0dp"
             android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/arrow_left" />
+            app:srcCompat="@drawable/arrow_left"
+            tools:ignore="VectorDrawableCompat" />
 
         <ImageView
             android:id="@+id/circle1"
@@ -162,7 +164,8 @@
             android:layout_marginLeft="50dp"
             android:backgroundTint="#D5ECEC"
             app:srcCompat="@drawable/ic_baseline_circle_24"
-            app:tint="@color/black" />
+            app:tint="@color/black"
+            tools:ignore="VectorDrawableCompat" />
 
         <ImageView
             android:id="@+id/circle3"
@@ -172,7 +175,8 @@
             android:layout_marginLeft="5dp"
             android:backgroundTint="#D5ECEC"
             app:srcCompat="@drawable/ic_baseline_circle_24"
-            app:tint="@color/white" />
+            app:tint="@color/white"
+            tools:ignore="VectorDrawableCompat" />
 
         <ImageButton
             android:id="@+id/arrow_rightt"
@@ -183,7 +187,8 @@
             android:layout_marginEnd="20dp"
             android:layout_marginRight="0dp"
             android:backgroundTint="#D5ECEC"
-            app:srcCompat="@drawable/arrow_right" />
+            app:srcCompat="@drawable/arrow_right"
+            tools:ignore="VectorDrawableCompat" />
 
 
     </LinearLayout>

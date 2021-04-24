@@ -4,36 +4,59 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Decouvrir extends AppCompatActivity {
 
-    //la barre
+public class MoodJava extends AppCompatActivity {
+
+    private ImageButton arrowLeft;
+    private ImageButton arrowRight;
+    private View time;
+    private View jour;
+    private View mensuel;
+    //barre
     private Button searchPage;
     private Button accueilPage;
     private Button readingPage;
     private Button historyPage;
     private Button plusPage;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_decouvrir);
+        setContentView(R.layout.mood);
+
+        //la barre
 
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
         readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
+        arrowLeft = findViewById(R.id.arrow_left2);
+        arrowRight = findViewById(R.id.arrow_right3);
+        time= findViewById(R.id.time);
+        jour= findViewById(R.id.selection);
+        mensuel= findViewById(R.id.reg);
 
+
+        arrowRight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent left = new Intent(MoodJava.this, Tracking.class);
+                startActivity(left);
+            }
+        });
         //la barre
 
         searchPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Decouvrir = new Intent(Decouvrir.this, Decouvrir.class);
+                Intent Decouvrir = new Intent(MoodJava.this, Decouvrir.class);
                 startActivity(Decouvrir);
             }
         });
@@ -41,7 +64,7 @@ public class Decouvrir extends AppCompatActivity {
         accueilPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Acceuil = new Intent(Decouvrir.this, Acceuil.class);
+                Intent Acceuil = new Intent(MoodJava.this, Acceuil.class);
                 startActivity(Acceuil);
             }
         });
@@ -66,9 +89,10 @@ public class Decouvrir extends AppCompatActivity {
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Plus = new Intent(Decouvrir.this, Plus.class);
+                Intent Plus = new Intent(MoodJava.this, Plus.class);
                 startActivity(Plus);
             }
         });
+
     }
 }

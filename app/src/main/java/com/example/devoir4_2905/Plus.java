@@ -1,4 +1,4 @@
-package com.example.devoir4_2905;
+package com.example.devoir4;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.devoir4_2905.login.Create_AccountActivity;
-import com.example.devoir4_2905.login.LoginActivity;
 
 public class Plus extends AppCompatActivity {
 
@@ -54,7 +51,7 @@ public class Plus extends AppCompatActivity {
         readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
 
-          //la barre
+        //la barre
 
         searchPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,7 +126,7 @@ public class Plus extends AppCompatActivity {
         plusmoodTracker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent forum = new Intent(Plus.this, Tracking.class);
+                Intent forum = new Intent(Plus.this, MoodJava.class);
                 startActivity(forum);
 
             }

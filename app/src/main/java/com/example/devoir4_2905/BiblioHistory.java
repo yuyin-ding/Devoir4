@@ -24,7 +24,7 @@ public class BiblioHistory extends AppCompatActivity {
 
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
-        readingPage = findViewById(R.id.readingButton);
+        readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
 

@@ -31,6 +31,12 @@ public class Humeur extends AppCompatActivity {
     private Button crying;
     private Button plus;
     private Time temps;
+    //barre
+    private Button searchPage;
+    private Button accueilPage;
+    private Button readingPage;
+    private Button historyPage;
+    private Button plusPage;
 
 
 
@@ -55,6 +61,13 @@ public class Humeur extends AppCompatActivity {
         love=findViewById(R.id.love);
         crying=findViewById(R.id.bad);
         plus=findViewById(R.id.more);
+        //la barre
+
+        searchPage = findViewById(R.id.research);
+        accueilPage = findViewById(R.id.home);
+        readingPage = findViewById(R.id.discover);
+        historyPage = findViewById(R.id.history);
+        plusPage = findViewById(R.id.plus);
 
         arrowright.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -167,6 +180,46 @@ public class Humeur extends AppCompatActivity {
                 Toast.makeText(Humeur.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
             }
         });
-}
+        searchPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Decouvrir = new Intent(Humeur.this, Decouvrir.class);
+                startActivity(Decouvrir);
+            }
+        });
+
+        accueilPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Accueil = new Intent(Humeur.this, Acceuil.class);
+                startActivity(Accueil);
+            }
+        });
+
+        readingPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Humeur.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+        historyPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Historique = new Intent(Humeur.this, BiblioHistory.class);
+                startActivity(Historique);
+            }
+        });
+
+        plusPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Plus = new Intent(Humeur.this, Plus.class);
+                startActivity(Plus);
+            }
+        });
+
+    }
 
 }

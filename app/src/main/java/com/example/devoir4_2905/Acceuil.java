@@ -21,7 +21,7 @@ public class Acceuil extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceuil);
-
+/*
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
         readingPage = findViewById(R.id.discover);
@@ -69,6 +69,8 @@ public class Acceuil extends AppCompatActivity{
                 startActivity(Plus);
             }
         });
+        */
+
     }
 }
 

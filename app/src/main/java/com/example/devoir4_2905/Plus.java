@@ -8,6 +8,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.devoir4_2905.login.Create_AccountActivity;
+import com.example.devoir4_2905.login.LoginActivity;
+
 public class Plus extends AppCompatActivity {
 
     //la barre
@@ -17,16 +20,39 @@ public class Plus extends AppCompatActivity {
     private Button historyPage;
     private Button plusPage;
 
+    private Button plusForum;
+    private Button plusSettings;
+    private Button plusAppel;
+    private Button plusSuggestionBook;
+    private Button plusFavoris;
+    private Button plusAudio;
+    private Button plusHelp;
+    private Button plusmoodTracker;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plus);
 
+
+
+        plusPage = findViewById(R.id.plus);
+        plusForum=findViewById(R.id.plusForum);
+        plusSettings=findViewById(R.id.plusSetting);
+        plusAppel=findViewById(R.id.plusAppel);
+        plusSuggestionBook=findViewById(R.id.plusBookSuggestion);
+        plusFavoris=findViewById(R.id.plusFavoris);
+        plusAudio=findViewById(R.id.plusAudioBook);
+        plusHelp=findViewById(R.id.plusHelp);
+        plusmoodTracker=findViewById(R.id.plusMood);
+
+/*
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
-        readingPage = findViewById(R.id.readingButton);
+        readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
-        plusPage = findViewById(R.id.plus);
 
         //la barre
 
@@ -60,7 +86,7 @@ public class Plus extends AppCompatActivity {
                 Intent BiblioHistory = new Intent(Plus.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,5 +95,74 @@ public class Plus extends AppCompatActivity {
                 startActivity(Plus);
             }
         });
+        plusForum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forum = new Intent(Plus.this, Forum.class);
+                startActivity(forum);
+
+            }
+        });
+        plusSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Plus.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+            }
+        });
+        plusAppel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forum = new Intent(Plus.this, Appel.class);
+                startActivity(forum);
+
+            }
+        });
+        plusmoodTracker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forum = new Intent(Plus.this, Tracking.class);
+                startActivity(forum);
+
+            }
+        });
+        plusFavoris.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forum = new Intent(Plus.this, Favoris.class);
+                startActivity(forum);
+
+            }
+        });
+        plusForum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forum = new Intent(Plus.this, Forum.class);
+                startActivity(forum);
+
+            }
+        });
+        plusSuggestionBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forum = new Intent(Plus.this, BookSuggestion.class);
+                startActivity(forum);
+
+            }
+        });
+        plusAudio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forum = new Intent(Plus.this, AudioBook.class);
+                startActivity(forum);
+
+            }
+        });
+        plusHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Plus.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
 }

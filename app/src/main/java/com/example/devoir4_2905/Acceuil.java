@@ -37,11 +37,12 @@ public class Acceuil extends AppCompatActivity{
         //la barre
 
         books.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent book = new Intent(Acceuil.this, Fault.class);
-                startActivity(book);
-            }
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée",
+                            Toast.LENGTH_LONG).show();
+
+                }
         });
 
         searchPage.setOnClickListener(new View.OnClickListener() {

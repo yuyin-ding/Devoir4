@@ -76,8 +76,8 @@ public class BookSuggestion extends AppCompatActivity {
         bookRec2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pere= new Intent(BookSuggestion.this,Pere.class);
-                startActivity(pere);
+                Toast.makeText(BookSuggestion.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+
             }
         });
 

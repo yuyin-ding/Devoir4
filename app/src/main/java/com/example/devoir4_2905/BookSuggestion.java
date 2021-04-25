@@ -120,16 +120,16 @@ public class BookSuggestion extends AppCompatActivity {
                 Toast.makeText(BookSuggestion.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
-        });
+        });*/
 
-      historyPage.setOnClickListener(new View.OnClickListener() {
+
+        historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent Historique = new Intent(BookSuggestion.this, BiblioHistory.class);
                 startActivity(Historique);
             }
-        });*/
-
+        });
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

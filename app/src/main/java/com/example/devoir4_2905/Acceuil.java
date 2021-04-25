@@ -25,7 +25,7 @@ public class Acceuil extends AppCompatActivity{
             this.getSupportActionBar().hide();
         }
         catch (NullPointerException e){}
-        books = findViewById(R.id.book1);
+        books = findViewById(R.id.bookCov);
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
         readingPage = findViewById(R.id.discover);
@@ -67,7 +67,7 @@ public class Acceuil extends AppCompatActivity{
                 Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
-        });
+        });*/
 
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,7 +75,7 @@ public class Acceuil extends AppCompatActivity{
                 Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
-        });*/
+        });
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

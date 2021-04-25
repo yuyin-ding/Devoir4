@@ -351,7 +351,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="“But it is the nature of stars to cross,
-        and never was Shakespeare more wrong than when he has Cassius note, The fault, dear Brutus, is not in our stars / But in ourselves.”"
+        and never was Shakespeare more wrong than when he has Cassius note, The fault, dear Brutus, is not in our stars But in ourselves.”"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:gravity="center_horizontal"

@@ -58,15 +58,15 @@ public class Appel extends AppCompatActivity {
                 Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
-        });
+        });*/
 
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
+                Intent BiblioHistory = new Intent(Appel.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
-        });*/
+        });
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

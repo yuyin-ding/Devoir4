@@ -34,14 +34,11 @@ public class AudioBook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_audiobook);
-        try{
-            this.getSupportActionBar().hide();
-        }
-        catch (NullPointerException e){}
+
 
         language = findViewById(R.id.language);
         audioBookPage = findViewById(R.id.audioBook);
-        audioBook = findViewById(R.id.bookAudio1);
+        audioBook = findViewById(R.id.bookCov);
         audioBookRec = findViewById(R.id.bookRec1);
         audioBookRec2 = findViewById(R.id.bookRec2);
         search = findViewById(R.id.bellButton);
@@ -134,7 +131,7 @@ public class AudioBook extends AppCompatActivity {
                 Toast.makeText(AudioBook.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
-        });
+        });*/
 
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,7 +139,7 @@ public class AudioBook extends AppCompatActivity {
                 Intent Historique = new Intent(AudioBook.this, BiblioHistory.class);
                 startActivity(Historique);
             }
-        });*/
+        });
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

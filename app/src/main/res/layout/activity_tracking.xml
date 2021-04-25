@@ -464,7 +464,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725"
+        app:layout_constraintVertical_bias="0.724"
         app:srcCompat="@drawable/ic_baseline_star_outline_24"
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
@@ -476,9 +476,13 @@
         android:text="0"
         android:textColor="@color/black"
         android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="499dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.648"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/minutes"
@@ -498,13 +502,17 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="59dp"
-        android:layout_height="43dp"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
         android:gravity="center_horizontal"
         android:text="mins/week"
         android:textColor="@color/black"
         android:textSize="15dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="537dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.71"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,18 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 
 public class Pere extends AppCompatActivity {
     RatingBar rating;
     Button book;
     float mine=0;
     private Button fav;  // TODO: coder la bd pour rajouter
-                            // les livres après fav
+    // les livres après fav
 
     //barre
     private Button searchPage;
@@ -24,7 +23,8 @@ public class Pere extends AppCompatActivity {
     private Button readingPage;
     private Button historyPage;
     private Button plusPage;
-    private Button pabe;
+    private Button antoine;
+
 
 
     @Override
@@ -36,16 +36,15 @@ public class Pere extends AppCompatActivity {
         }
         catch (NullPointerException e){}
         //la barre
-         /* searchPage = findViewById(R.id.research);
+        searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
         readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
-        plusPage = findViewById(R.id.plus);*/
+        plusPage = findViewById(R.id.plus);
         fav= findViewById(R.id.fav);
         rating= findViewById(R.id.rating);
-        book= findViewById(R.id.bookSug2);
-        pabe= findViewById(R.id.pabe);
-
+        book= findViewById(R.id.bookCov);
+        antoine= findViewById(R.id.antoine);
 
         rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
 
@@ -92,7 +91,7 @@ public class Pere extends AppCompatActivity {
                 startActivity(Accueil);
             }
         });
-/*
+
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,7 +106,7 @@ public class Pere extends AppCompatActivity {
                 Intent Historique = new Intent(Pere.this, BiblioHistory.class);
                 startActivity(Historique);
             }
-        });*/
+        });
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,7 +126,7 @@ public class Pere extends AppCompatActivity {
             }
         });
 
-        pabe.setOnClickListener(new View.OnClickListener() {
+        antoine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Pere.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
@@ -135,4 +134,6 @@ public class Pere extends AppCompatActivity {
             }
         });
     }
+
+
 }

@@ -244,11 +244,11 @@
         app:iconTintMode="multiply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108"
+        app:layout_constraintVertical_bias="0.097"
         tools:ignore="MissingConstraints" />
-
 
     <TextView
         android:id="@+id/textView8"
@@ -261,11 +261,12 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/fav"
-        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381"
+        app:layout_constraintVertical_bias="0.328"
         tools:ignore="MissingConstraints" />
+
 
     <RatingBar
         android:id="@+id/rating"
@@ -275,10 +276,10 @@
         android:rating="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintHorizontal_bias="0.581"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576"
+        app:layout_constraintVertical_bias="0.529"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -291,12 +292,11 @@
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457"
+        app:layout_constraintVertical_bias="0.401"
         tools:ignore="MissingConstraints" />
-
 
     <Button
         android:id="@+id/antoine"
@@ -312,7 +312,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507"
+        app:layout_constraintVertical_bias="0.46"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -324,10 +324,11 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintHorizontal_bias="0.962"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.34" />
+
 
     <TextView
         android:id="@+id/textView9"
@@ -339,31 +340,30 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628"
+        app:layout_constraintVertical_bias="0.591"
         tools:ignore="MissingConstraints" />
-
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="393dp"
-        android:layout_height="186dp"
+        android:layout_width="391dp"
+        android:layout_height="202dp"
         android:text="Le narrateur est un aviateur qui, à la suite
-        d'une panne de moteur, a dû se poser en catastrophe dans le
-         désert du Sahara et tente seul de réparer son avion (Antoine
-         de Saint-Exupéry se met en scène lui-même dans son œuvre). ...
-         Jour après jour, le petit prince raconte son histoire au narrateur."
+ d'une panne de moteur, a dû se poser en catastrophe dans le
+ désert du Sahara et tente seul de réparer son avion (Antoine
+ de Saint-Exupéry se met en scène lui-même dans son œuvre). ...
+ Jour après jour, le petit prince raconte son histoire au narrateur."
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84"
+        app:layout_constraintVertical_bias="0.861"
         tools:ignore="MissingConstraints" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

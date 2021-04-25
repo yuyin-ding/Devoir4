@@ -12,8 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MoodJava extends AppCompatActivity {
 
-    private ImageButton arrowLeft;
-    private ImageButton arrowRight;
+    private Button arrowRight;
     private View time;
     private View jour;
     private View mensuel;
@@ -41,7 +40,6 @@ public class MoodJava extends AppCompatActivity {
         readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
-        arrowLeft = findViewById(R.id.arrow_left2);
         arrowRight = findViewById(R.id.arrow_right3);
         time= findViewById(R.id.time);
         jour= findViewById(R.id.selection);
@@ -80,16 +78,16 @@ public class MoodJava extends AppCompatActivity {
                 Toast.makeText(Acceuil.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
 
             }
-        });
+        });*/
+
 
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
+                Intent BiblioHistory = new Intent(MoodJava.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
-        });*/
-
+        });
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

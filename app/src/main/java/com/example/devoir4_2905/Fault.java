@@ -22,7 +22,8 @@ public class Fault extends AppCompatActivity {
     private Button readingPage;
     private Button historyPage;
     private Button plusPage;
-    private Button john;
+    private Button antoine;
+
 
 
     @Override
@@ -34,7 +35,6 @@ public class Fault extends AppCompatActivity {
         }
         catch (NullPointerException e){}
         //la barre
-
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
         readingPage = findViewById(R.id.discover);
@@ -42,9 +42,8 @@ public class Fault extends AppCompatActivity {
         plusPage = findViewById(R.id.plus);
         fav= findViewById(R.id.fav);
         rating= findViewById(R.id.rating);
-        book= findViewById(R.id.bookSug2);
-        john= findViewById(R.id.john);
-
+        book= findViewById(R.id.bookCov);
+        antoine= findViewById(R.id.antoine);
 
         rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
 
@@ -92,7 +91,6 @@ public class Fault extends AppCompatActivity {
             }
         });
 
-/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,7 +105,7 @@ public class Fault extends AppCompatActivity {
                 Intent Historique = new Intent(Fault.this, BiblioHistory.class);
                 startActivity(Historique);
             }
-        });*/
+        });
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,7 +125,7 @@ public class Fault extends AppCompatActivity {
             }
         });
 
-        john.setOnClickListener(new View.OnClickListener() {
+        antoine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Fault.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
@@ -135,6 +133,6 @@ public class Fault extends AppCompatActivity {
             }
         });
     }
+
+
 }
-
-

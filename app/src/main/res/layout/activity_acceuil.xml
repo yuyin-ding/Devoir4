@@ -378,7 +378,7 @@
 
 
             <Button
-                android:id="@+id/book1"
+                android:id="@+id/bookCov"
                 android:layout_width="125dp"
                 android:layout_height="175dp"
                 android:layout_marginLeft="30dp"

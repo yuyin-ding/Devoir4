@@ -60,14 +60,14 @@ public class Favoris extends AppCompatActivity {
 
             }
         });
-
+*/
         historyPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent BiblioHistory = new Intent(Acceuil.this, BiblioHistory.class);
+                Intent BiblioHistory = new Intent(Favoris.this, BiblioHistory.class);
                 startActivity(BiblioHistory);
             }
-        });*/
+        });
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,4 +1,4 @@
-package com.example.devoir4.login;
+package com.example.devoir4_2905.login;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.devoir4.R;
+import com.example.devoir4_2905.R;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton arrow_right;

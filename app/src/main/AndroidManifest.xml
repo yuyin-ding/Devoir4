@@ -25,6 +25,10 @@
         <activity android:name=".Favoris" />
         <activity android:name=".Plus" />
         <activity android:name=".Tracking" />
+        <activity android:name=".Prince" />
+        <activity android:name=".MoodJava" />
+        <activity android:name=".Pere" />
+        <activity android:name=".Fault" />
         <activity
             android:name=".login.MainActivity"
             android:label="BooksForU">

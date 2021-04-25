@@ -1,4 +1,4 @@
-package com.example.devoir4;
+package com.example.devoir4_2905;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.devoir4.login.Reading_TimeActivity;
+import com.example.devoir4_2905.login.Reading_TimeActivity;
+
 
 public class Tracking extends AppCompatActivity {
     private TextView min;

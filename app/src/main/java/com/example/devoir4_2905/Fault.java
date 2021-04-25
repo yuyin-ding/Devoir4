@@ -1,4 +1,4 @@
-package com.example.devoir4;
+package com.example.devoir4_2905;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,14 +30,15 @@ public class Fault extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.livre_tfios);
         //la barre
+
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
-        readingPage = findViewById(R.id.readingButton);
+        readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
         fav= findViewById(R.id.fav);
         rating= findViewById(R.id.rating);
-        book= findViewById(R.id.bookRec2);
+        book= findViewById(R.id.bookSug2);
         john= findViewById(R.id.john);
 
 
@@ -87,6 +88,7 @@ public class Fault extends AppCompatActivity {
             }
         });
 
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,7 +103,7 @@ public class Fault extends AppCompatActivity {
                 Intent Historique = new Intent(Fault.this, BiblioHistory.class);
                 startActivity(Historique);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

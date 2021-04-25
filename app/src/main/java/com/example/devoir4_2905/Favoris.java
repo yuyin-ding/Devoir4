@@ -1,4 +1,4 @@
-package com.example.devoir4;
+package com.example.devoir4_2905;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,7 @@ public class Favoris extends AppCompatActivity {
     private Button readingPage;
     private Button historyPage;
     private Button plusPage;
+    public  Button profilN2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class Favoris extends AppCompatActivity {
         readingPage = findViewById(R.id.reading);
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
+        profilN2 =findViewById(R.id.profilN2);
 
         //la barre
 
@@ -67,6 +69,13 @@ public class Favoris extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent Plus = new Intent(Favoris.this, Plus.class);
+                startActivity(Plus);
+            }
+        });
+        profilN2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Plus = new Intent(Favoris.this, Forum.class);
                 startActivity(Plus);
             }
         });

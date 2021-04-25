@@ -1,4 +1,4 @@
-package com.example.devoir4;
+package com.example.devoir4_2905;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.devoir4.login.Reading_preferencesActivity;
+import com.example.devoir4_2905.login.Reading_preferencesActivity;
 
 import java.sql.Time;
 

@@ -1,10 +1,11 @@
-package com.example.devoir4;
+package com.example.devoir4_2905;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,7 +34,7 @@ public class Prince extends AppCompatActivity {
             //la barre
             searchPage = findViewById(R.id.research);
             accueilPage = findViewById(R.id.home);
-            readingPage = findViewById(R.id.readingButton);
+            readingPage = findViewById(R.id.discover);
             historyPage = findViewById(R.id.history);
             plusPage = findViewById(R.id.plus);
             fav= findViewById(R.id.fav);
@@ -41,7 +42,7 @@ public class Prince extends AppCompatActivity {
             book= findViewById(R.id.bookCov);
             antoine= findViewById(R.id.antoine);
 
-            rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+           rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
 
                 @Override
                 public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {

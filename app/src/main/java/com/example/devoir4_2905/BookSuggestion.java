@@ -1,4 +1,4 @@
-package com.example.devoir4;
+package com.example.devoir4_2905;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +16,7 @@ public class BookSuggestion extends AppCompatActivity {
 
     private TextView bookSuggestionPage;
     private TextView languagee;
-    private Button bookRec;
+    private Button bookRec1;
     private Button bookRec2;
     private ImageButton search;
     private TextInputEditText inputSearch;
@@ -34,8 +34,8 @@ public class BookSuggestion extends AppCompatActivity {
 
         languagee= findViewById(R.id.languagee);
         bookSuggestionPage = findViewById(R.id.bookSuggestion);
-        bookRec = findViewById(R.id.bookRec1);
-        bookRec2 = findViewById(R.id.bookRec2);
+        bookRec1 = findViewById(R.id.bookSug1);
+        bookRec2 = findViewById(R.id.bookSug2);
         search = findViewById(R.id.bellButton);
         inputSearch = findViewById(R.id.inputText);
 
@@ -61,7 +61,7 @@ public class BookSuggestion extends AppCompatActivity {
                 startActivity(BookSugges);
             }
         });
-        bookRec.setOnClickListener(new View.OnClickListener() {
+        bookRec1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent prince= new Intent(BookSuggestion.this,Prince.class);
@@ -110,21 +110,21 @@ public class BookSuggestion extends AppCompatActivity {
             }
         });
 
-//        readingPage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(BookSuggestion.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
-//
-//            }
-//        });
-//
-//        historyPage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent Historique = new Intent(BookSuggestion.this, BiblioHistory.class);
-//                startActivity(Historique);
-//            }
-//        });
+       /* readingPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(BookSuggestion.this, "Désolé cette fonctionnalité n'a pas été implementée", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+      historyPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Historique = new Intent(BookSuggestion.this, BiblioHistory.class);
+                startActivity(Historique);
+            }
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

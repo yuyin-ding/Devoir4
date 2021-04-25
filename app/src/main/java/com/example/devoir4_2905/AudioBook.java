@@ -1,4 +1,4 @@
-package com.example.devoir4;
+package com.example.devoir4_2905;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -45,7 +45,7 @@ public class AudioBook extends AppCompatActivity {
         //la barre
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);
-        readingPage = findViewById(R.id.readingButton);
+        readingPage = findViewById(R.id.discover);
         historyPage = findViewById(R.id.history);
         plusPage = findViewById(R.id.plus);
 
@@ -123,7 +123,7 @@ public class AudioBook extends AppCompatActivity {
                 startActivity(Accueil);
             }
         });
-
+/*
         readingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -138,7 +138,7 @@ public class AudioBook extends AppCompatActivity {
                 Intent Historique = new Intent(AudioBook.this, BiblioHistory.class);
                 startActivity(Historique);
             }
-        });
+        });*/
 
         plusPage.setOnClickListener(new View.OnClickListener() {
             @Override

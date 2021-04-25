@@ -250,7 +250,7 @@
 
 
                 <Button
-                    android:id="@+id/bookRec1"
+                    android:id="@+id/bookSug1"
                     android:layout_width="175dp"
                     android:layout_height="175dp"
                     android:layout_marginLeft="30dp"
@@ -265,7 +265,7 @@
 
 
                 <Button
-                    android:id="@+id/bookRec2"
+                    android:id="@+id/bookSug2"
                     android:layout_width="135dp"
                     android:layout_height="175dp"
                     android:layout_marginLeft="30dp"

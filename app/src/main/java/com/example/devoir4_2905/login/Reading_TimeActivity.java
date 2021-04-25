@@ -30,6 +30,10 @@ public class Reading_TimeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reading_time);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
 
         picker = findViewById(R.id.number_picker);

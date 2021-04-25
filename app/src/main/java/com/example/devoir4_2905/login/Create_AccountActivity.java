@@ -27,6 +27,10 @@ public class Create_AccountActivity  extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         fullName = findViewById(R.id.full_name);
         newEmail = findViewById(R.id.new_email);

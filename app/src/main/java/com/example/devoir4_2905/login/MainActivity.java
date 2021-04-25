@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
+
         arrow_right=findViewById(R.id.arrow_right);
         arrow_right.setOnClickListener(new View.OnClickListener() {
             @Override

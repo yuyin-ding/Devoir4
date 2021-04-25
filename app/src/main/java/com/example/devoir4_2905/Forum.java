@@ -30,6 +30,10 @@ public class Forum extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forum);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         //la barre
         searchPage = findViewById(R.id.research);

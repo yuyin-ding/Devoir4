@@ -34,6 +34,10 @@ public class AudioBook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_audiobook);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         language = findViewById(R.id.language);
         audioBookPage = findViewById(R.id.audioBook);

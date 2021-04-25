@@ -22,6 +22,10 @@ public class Appel extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appel);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);

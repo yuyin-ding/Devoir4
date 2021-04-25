@@ -50,6 +50,10 @@ public class Humeur extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_humeur);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         arrowright=findViewById(R.id.arrowright);
         sick=findViewById(R.id.sick);

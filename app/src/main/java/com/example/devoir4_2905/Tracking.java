@@ -32,6 +32,10 @@ public class Tracking extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracking);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
         min=findViewById(R.id.minutes);
         goal=findViewById(R.id.goals);
         //goal= goalSet.getTime;

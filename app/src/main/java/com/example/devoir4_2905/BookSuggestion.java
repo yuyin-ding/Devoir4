@@ -31,6 +31,10 @@ public class BookSuggestion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_suggestion);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         languagee= findViewById(R.id.languagee);
         bookSuggestionPage = findViewById(R.id.bookSuggestion);

@@ -21,6 +21,10 @@ public class BiblioHistory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_biblio_history);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
         prince= findViewById(R.id.bookRec1);
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);

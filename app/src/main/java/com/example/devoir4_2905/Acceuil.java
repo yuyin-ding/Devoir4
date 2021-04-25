@@ -20,6 +20,11 @@ public class Acceuil extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceuil);
+
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
         books = findViewById(R.id.book1);
         searchPage = findViewById(R.id.research);
         accueilPage = findViewById(R.id.home);

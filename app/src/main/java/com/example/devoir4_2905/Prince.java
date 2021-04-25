@@ -31,6 +31,10 @@ public class Prince extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.livre_prince);
+            try{
+                this.getSupportActionBar().hide();
+            }
+            catch (NullPointerException e){}
             //la barre
             searchPage = findViewById(R.id.research);
             accueilPage = findViewById(R.id.home);

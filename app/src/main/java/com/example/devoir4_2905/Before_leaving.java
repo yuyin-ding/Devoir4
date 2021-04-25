@@ -40,6 +40,10 @@ public class Before_leaving  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaving);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         call=findViewById(R.id.call);
         sick=findViewById(R.id.sick);

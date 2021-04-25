@@ -27,6 +27,10 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        try{
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         createAccount=findViewById(R.id.createAccount);
         forgotPassword=findViewById(R.id.forgot_password);

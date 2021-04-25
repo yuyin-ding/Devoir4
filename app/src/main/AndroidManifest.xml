@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Devoir4_2905">
-        <activity android:name=".Appel"></activity>
+
+        <activity android:name=".Appel"/>
         <activity android:name=".Forum" />
         <activity android:name=".BookSuggestion" />
         <activity android:name=".login.LoginActivity" />

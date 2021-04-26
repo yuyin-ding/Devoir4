@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.example.devoir4_2905.Acceuil;
 import com.example.devoir4_2905.Humeur;
 import com.example.devoir4_2905.R;
 import com.google.android.material.textfield.TextInputLayout;
@@ -86,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
         if(!validateEmail()| !validatePassword()){
             return;
         }
-        Intent moodActivity = new Intent(LoginActivity.this, Humeur.class);
+        Intent moodActivity = new Intent(LoginActivity.this, Acceuil.class);
         startActivity(moodActivity);
 
     }

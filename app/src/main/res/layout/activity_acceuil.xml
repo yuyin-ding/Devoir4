@@ -14,8 +14,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/profil"
@@ -91,10 +93,13 @@
         android:foregroundGravity="bottom"
         android:gravity="bottom"
         android:orientation="horizontal"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:id="@+id/homeLayout"
@@ -341,8 +346,8 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="397dp"
-        android:layout_height="589dp"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toTopOf="@+id/barre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -500,8 +505,6 @@
                     app:iconSize="175dp"
                     app:iconTintMode="multiply"
                     tools:ignore="DuplicateIds" />
-
-
 
 
             </LinearLayout>

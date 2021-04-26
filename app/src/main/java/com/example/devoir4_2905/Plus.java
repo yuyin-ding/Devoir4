@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,14 +18,14 @@ public class Plus extends AppCompatActivity {
     private Button historyPage;
     private Button plusPage;
 
-    private Button plusForum;
-    private Button plusSettings;
-    private Button plusAppel;
-    private Button plusSuggestionBook;
-    private Button plusFavoris;
-    private Button plusAudio;
-    private Button plusHelp;
-    private Button plusmoodTracker;
+    private LinearLayout plusForum;
+    private LinearLayout plusSettings;
+    private LinearLayout plusAppel;
+    private LinearLayout plusSuggestionBook;
+    private LinearLayout plusFavoris;
+    private LinearLayout plusAudio;
+    private LinearLayout plusHelp;
+    private LinearLayout plusmoodTracker;
 
 
 
@@ -40,14 +41,14 @@ public class Plus extends AppCompatActivity {
 
 
         plusPage = findViewById(R.id.plus);
-        plusForum=findViewById(R.id.plusForum);
-        plusSettings=findViewById(R.id.plusSetting);
-        plusAppel=findViewById(R.id.plusAppel);
-        plusSuggestionBook=findViewById(R.id.plusBookSuggestion);
-        plusFavoris=findViewById(R.id.plusFavoris);
-        plusAudio=findViewById(R.id.plusAudioBook);
-        plusHelp=findViewById(R.id.plusHelp);
-        plusmoodTracker=findViewById(R.id.plusMood);
+        plusForum=findViewById(R.id.goToForum);
+        plusSettings=findViewById(R.id.goToSettings);
+        plusAppel=findViewById(R.id.goToAppel);
+        plusSuggestionBook=findViewById(R.id.goToBookSuggestion);
+        plusFavoris=findViewById(R.id.goToFavoris);
+        plusAudio=findViewById(R.id.goToAudioBook);
+        plusHelp=findViewById(R.id.goToHelp);
+        plusmoodTracker=findViewById(R.id.goToMoodTrack);
 
 
         searchPage = findViewById(R.id.research);
